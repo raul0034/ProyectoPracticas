@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae Lola Iñiguez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box0">
+        <div class="box1-2">
+            <div class="card">
+                <img src="LOLA_1.jpeg" alt=""></div>
+            <div class="box1">
+                <h1>LOLA IÑIGUEZ ALBERO</h1></div>
+            
+        </div>        
+            
+            
+        <div class="box">
+            <h2>DATOS PERSONALES</h2>
+            <ul>
+            <p><li><b>Nombre y apellidos:</b> Lola Iñiguez Albero</li>
+            <li><b>DNI:</b> 48470843E</li>
+            <li><b>Dirección:</b> Calle Béjar Nº 18 2ºD. Alicante 03013</li>
+            <li><b>Teléfono</b> 606043282</li>;
+            <li><b>Correo electrónico:</b> lolainiguez88@gmail.com</li></p></ul></div>
+    <h2>EXPERIENCIA LABORAL</h2>
+    <ul>
+    <li><h3 class="fechas">02/2010- 05/2016: Responsable de ventas de equipo comercial de Mobile Phone Telecomunicaciones. Madrid</h3></li>
+    <p>Trabaje como comercial durante los dos primeros años en la empresa y me ascendieron a jefa de equipo de una de sus tiendas en el C.C Plenilunio. Las funciones como jefa de equipo era el seguimiento de ventas de los comerciales, el cuadrante de horarios, contabilidad de caja. Abandone la empresa por voluntad propia y dispongo de carta de recomendación de dicha empresa</p>
+    <li><h3 class="fechas">06/2016- 10/2020: Comercial Vodafone </h3></li>
+    <p>Comercial en stand de vodafone encargado de captacion de clientes para asesorar y vender producto. Situado en Carrefour de S.S de los Reyes (Madrid). Con esta empresa me traslade a Alicante donde vivo actualemente. Continue mi carrera en la empresa en tienda situada en Plaza de Luceros. </p>
+    <li><h3 class="fechas">11/2020- 04/2022 Asesor en centro de formación a distancia para Implika. </h3></li>
+    <p>Empresa dedicada a la formación a distancia de formación profesional y cursos de capacitación profesional. Emitiamos llamadas a posibles alumnos que solicitaban información por Internet y les orientabamos sobre la formación que podían optar en función de sus intereses, estudios y capacidades económicas. Era un centro de formación privado, por lo que era un trabajo comercial. A inicios de 2022 la empresa se vendió y se hizo un ERE.</p>
+    <li><h3 class="fechas">05/2022- ACTIALIDAD</h3></li>
+    <p>Estoy realizando un Técnico en Sistemas Microinformáticos y Redes en MEDAC, el cual se me ofrecio por la empresa al considerarse ilegal el ERE realizado por Implika</p>
+    </ul>
+    <h2>APTITUDES TÉCNICAS</h2>
+    <p>Curso de mecanografía con un nivel muy alto. En todos los años he Conseguido perfeccionarlo. Manejo de excell, world y sistemas Windows  </p>
+    <h2>INFORMACIÓN ADICIONAL</h2>
+    <p> En ingles tengo un nivel medio escrito y hablado, estoy dando clases para perfecciónalo. Soy una chica dinámica y aprendo con facilidad. Me gusta trabajar en equipo y necesito nuevos retos. Dispongo de vehículo y no tengo problema en desplazarme. </p>
+    </div>
+</div>
+</body>
+</html>
