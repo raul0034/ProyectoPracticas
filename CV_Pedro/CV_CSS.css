@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #1d1d1d;
+}
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.main-header {
+    text-align: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #1d1d1d;
+}
+.main-header h1 {
+    font-size: larger;
+    border-bottom: #000000;
+}
+.sidebar {
+    background-color: #330000;
+    color: #f4f4f4;
+    padding: 20px;
+}
+.sidebar h2 {
+    background-color: #6b0000
+    color: #ffffff
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffff
+}
+.sidebar .cabecera-info-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    color: #ffffff;
+    margin-right: 35px; 
+}
+.sidebar .info-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+    font-style: italic;
+    color: #ffffff;
+    font-size: small;
+    margin-right: 35px;
+}
+.sidebar .correo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    font-style: italic;
+    color: #ffffff;
+    font-size: small;
+    margin-right: 50px;
+}
+.sidebar .habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+    margin-right: 35px;
+}
+.photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.main-content {
+    background-color: #f4f4f4
+    color: #1d1d1d;
+    padding: 20px;
+}
+.main-content h1 {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    font-size: 38px;
+    color: #6b0000
+    margin-top: 0px;
+    border-bottom: px solid #6b0000;
+}
+.main-content h2 {
+    background-color: #6b0000
+    color: #ffffff
+    padding-bottom: 5px;
+    border-bottom: 5px solid #6b0000
+}
+.main-content .date {
+    font-style: italic;
+    color: slategray;
+    margin-top: 1px;
+    font-size: small;
+}
+.main-content .header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
