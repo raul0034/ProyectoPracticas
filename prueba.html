@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            .contenedor {
+                display: flex;
+            }
+            .boton {
+                font-family: "Bebas Neue";
+                font-size: 20px;
+                display: flex;
+                width: 100px;
+                height: 100px;
+                background-color: rgb(206, 13, 145);
+                margin: 20px;
+                justify-content: center;
+                align-items: center;
+                border-width: 6px;
+                border-radius: 40px;
+                transition: transform 0.3s ease-in-out;
+            }
+            .boton:hover {
+                transform: scale(1.03);
+                background-color: rgb(171, 11, 102);
+            }            
+            //cambio color prueba
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <button class="boton" >Pulsa aqui</button>
+            <button class="boton" >Pulsa aqui</button>
+            <button class="boton" >Pulsa aqui</button>
+            <button class="boton" >Pulsa aqui</button>
+        </div>
+    </body>
+</html>
