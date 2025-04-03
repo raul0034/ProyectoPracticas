@@ -43,17 +43,17 @@
 <style>
 .contenedor-tarjetas-4columnas {
   display: flex;
-  flex-wrap: wrap; 
   justify-content: center;
-  gap: 20px;
+  flex-wrap: nowrap;
+  gap: 30px;
   margin: 0 auto;
   overflow-x: auto;
   padding: 20px;
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
 }
 .tarjeta-estilo {
-  background: var(--color-secundario, #d3d3d3);
+  background: var(--color-secundario, #c0c0c0);
   border-radius: 0px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -89,15 +89,13 @@
   flex-direction: column;
 }
 .tarjeta-contenido h3 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
-  color: var(--color-primario, #0b1e31);
+  color: #000000;
 }
 .tarjeta-contenido p {
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--color-primario, #0b1e31);
+  color: #000000;
   margin-bottom: 20px;
   line-height: 1.6;
   flex-grow: 1;
