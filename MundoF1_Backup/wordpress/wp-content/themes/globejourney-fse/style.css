@@ -1,0 +1,234 @@
+/*
+Theme Name: GlobeJourney FSE
+Theme URI: https://gracethemes.com/themes/free-travel-booking-wordpress-theme/
+Author: Grace Themes
+Author URI: https://gracethemes.com/
+Description: The GlobeJourney FSE is free travel booking WordPress theme for tour agency, tour guide, tour operator, tourism, tours, travel, travel agency, travel and tourism website, travel booking. It offers multiple benefits for all sorts of travel and tourism websites like hotels, travel insurance, tour planners, ticketing agencies, etc. It is very easy to install and setup this theme. You can easily operate it on multiple devices like laptops, PCs, tablets, etc, without the slightest alteration in its efficiency. As it is a full-site editing theme, GlobeJourney FSE can be entirely customized without expert coding skills. This travel theme comes with a dynamic and modern homepage, you will be efficient in drawing more audience to your website. Besides, you can use unique and innovative custom box layouts to add a touch of richness to your webpage. Accordions, Sliders, WP Forms, WP Page Builder, WPBakery, and many other efficient website plugins are completely compatible with it to enhance the convenience of the users. Since this option comes with multi-browser compatibility, you can operate it on multiple browsing platforms without encountering any problems. Browsers like Google, Yahoo, Bing, Mozilla Firefox, Chrome, etc work perfectly fine with it. So, you can operate it from the browser of your choice. To promote better business transactions, this free travel booking WordPress theme comes integrated with the popular e-commerce plugin WooCommerce. 
+
+Version: 1.0
+License: GNU General Public License version 2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: globejourney-fse
+Requires PHP:  5.6
+Tested up to: 6.7
+Tags:blog, news, one-column, two-columns, right-sidebar, block-styles, custom-colors, editor-style, custom-background, custom-menu, featured-images, template-editing, full-site-editing, block-patterns,  threaded-comments, wide-blocks, translation-ready
+GlobeJourney FSE WordPress Theme has been created by Grace Themes(gracethemes.com), 2025.
+GlobeJourney FSE WordPress Theme is released under the terms of GNU GPL
+*/
+
+.site-main-header{  
+	position:relative;
+}
+.clear{ clear:both; }
+
+/*dropdown menu background color*/
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container{ 
+	background-color:#ffffff;
+}
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container li{ 
+	padding:5px 0; 
+	border-bottom:1px solid #ddd !important;
+}
+.wp-block-navigation__submenu-container.wp-block-navigation-submenu{ 
+	padding-top:30px !important
+}
+.wp-block-navigation__submenu-container.wp-block-navigation-submenu li ul{ 
+	padding-top:0 !important; 
+	left:100% !important; 
+	right:auto !important;
+}
+.header-navigation.wp-block-navigation{ padding:5px 0 !important;}
+
+.logo {  
+    position: relative;
+}
+.header_right_menu{	
+	position:relative;
+}
+
+.headertop-row{ position:relative;}
+	
+.headertop-row:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 56px solid #fff;
+    border-right: 30px solid transparent;
+    position: absolute;
+    left: 0;
+	top:0;
+}
+
+.headertop-row:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 56px solid #fff;
+    border-left: 30px solid transparent;
+    position: absolute;
+    right: 0;
+    top:0;
+}	
+
+/* = Sidebar CSS
+----------------------------------------------- */
+.st-widgetBX ul.wp-block-latest-posts li{ 
+	margin-bottom:20px; 
+	min-height:80px;
+}
+.st-widgetBX ul.wp-block-latest-posts li a.wp-block-latest-posts__post-title{ 
+	margin-bottom:5px !important; 
+	display:block; 
+	line-height:20px;
+}
+
+/* = Contact Form 7 CSS
+----------------------------------------------- */
+.wpcf7{ 
+	margin:30px 0 0;padding:0;
+}
+.wpcf7 input[type="text"], 
+.wpcf7 input[type="tel"], 
+.wpcf7 input[type="email"]{ 
+	width:40%;	
+	color:#797979;
+	margin-bottom:0;
+	border:1px solid #cccccc;
+	box-shadow:inset 1px 1px 2px #ccc;
+	height:40px;
+	padding:0 15px;
+}	
+.wpcf7 textarea{
+	color:#797979;
+	margin-bottom:25px;
+	border:1px solid #cccccc;
+	box-shadow:inset 1px 1px 2px #ccc;
+	padding:10px;
+	width:60%;
+	height:160px;
+	font-size:12px;
+}
+.wpcf7 input[type="submit"]{
+	border-radius:40px;	
+	cursor:pointer;
+	background-color:#60c19f;
+	padding:20px 40px;
+	color:#ffffff;
+	font-weight:600;
+	border:none;
+	font-size:16px;
+	width:auto;	
+	text-transform:uppercase;
+}
+.wpcf7 input[type="submit"]:hover{
+	background-color:#101010;
+}
+
+
+
+/* = Blog page Design CSS
+----------------------------------------------- */
+ul.blog-list-style{ 
+	margin:0; 
+	padding:0; 
+}
+ul.blog-list-style li{ 
+	margin-bottom:25px; 	
+	display:flow-root; 
+	padding:30px;
+	border-radius:5px; 
+	box-shadow:0 0 30px rgb(193 193 193/30%);
+	
+}
+ul.blog-list-style li .blog-thumbx{ 
+	margin:0 35px 20px 0;
+}
+ul.blog-list-style li a.wp-block-post-excerpt__more-link{ 
+	padding:10px 20px; border-radius:10px
+}
+
+ul.blog-list-style li .blog-thumbx.wp-block-post-featured-image a,
+ul.blog-list-style li .blog-thumbx.wp-block-post-featured-image img{ 
+	height:auto;
+}
+.wp-block-group.sidebar-blog .st-widgetBX{ 
+	box-shadow:0 0 30px rgb(193 193 193/30%);
+}
+
+.wp-block-group.PostStyle-1{ 
+	padding:30px;	
+	box-shadow:0 0 30px rgb(193 193 193/30%);
+	border-radius:5px; 
+	display:flow-root; 
+}
+.wp-block-column.fse-page-layout{
+	padding:30px;
+	border-radius:5px; 
+	display:flow-root; 
+	box-shadow:0 0 30px rgb(193 193 193/30%);
+}
+
+/* = Popular Tour Types CSS
+----------------------------------------------- */
+.popular_tourcol{ position:relative !important;}
+.popular_tourcol .gpara{ display:none;}
+.popular_tourcol:hover .gpara{ display:block;}
+/*.wp-block-cover.coverBX{ padding:0 !important; position:relative !important;}*/
+
+
+/* = Footer CSS
+----------------------------------------------- */
+.site-footer{ 
+	position:relative;
+}
+.site-footer h3.wp-block-heading{ 
+	position:relative; 
+}
+
+
+footer.wp-block-template-part{ 
+	margin-block-start:0 !important
+}
+
+.Footer-QuickLinks{ 
+	list-style:none !important; 
+	padding:0 !important;
+}
+.Footer-QuickLinks li{ 
+	list-style:none !important; 
+	padding:5px 0 5px 0 !important;
+}
+.Footer-QuickLinks li a:hover{ 
+	text-decoration:none; 
+}
+.footer-latest-news li{ 
+	margin-bottom:10px;
+}
+.wp-block-social-links.footer-social li{ 
+	border-radius:10px;
+}
+.wp-block-social-links.footer-social li a{ 
+	padding:12px;
+}
+ul.fs-footer-post{ 
+	margin:0; 
+	padding:0;
+}
+ul.fs-footer-post li{ 
+	list-style:none; 
+	margin-bottom:30px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__featured-image{ 
+	margin-top:6px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__featured-image img{ 
+	border-radius:10px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__post-title{ 
+	margin-bottom:15px; 
+	display:block; 
+	line-height:22px;
+}
+ul.fs-footer-post li .wp-block-latest-posts__post-title:hover{ 
+	color:#8cc73e;
+}
