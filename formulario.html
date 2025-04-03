@@ -1,0 +1,86 @@
+<style>
+    .contenedor-formulario {
+        background-image: url("http://localhost/wordpress/wp-content/uploads/2025/04/Copy-of-Animation-1743670051925-1.gif");
+        background-color: #d3d3d3;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        min-height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    input, textarea, button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box; 
+    }
+    button {
+        background: #c0c0c0;
+        color: #696969;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+        font-weight: bold;
+    }
+    button:hover {
+        background: #ffffff;
+        color: #333;
+    }
+
+    .campo button {
+        margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .contenedor-formulario {
+            max-width: 90%;
+        }
+
+        input, textarea, button {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<form class="contenedor-formulario">
+    <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="campo">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+    </div>
+    <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    </div>
+    <div class="campo" style="text-align: center;">
+        <button type="submit">Enviar</button>
+    </div>
+</form>

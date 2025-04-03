@@ -1,0 +1,61 @@
+<title>Bloque con Imagen y Texto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            height: 70vh;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .image {
+            flex: 1;
+            background: url('https://www.elmueble.com/medio/2018/09/27/salon-con-banco-unapared-beige-y-otra-marron00474461-o_330d8f1f_1819x2000.jpg') center/cover no-repeat;
+            height: 100%;
+        }   
+
+        .text {
+            flex: 1;
+            background-color: #d3d3d3;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            font-size: 24px;
+            flex-direction: column;
+            margin: 0px;
+        }
+        h2 {
+            margin-bottom: 60px; 
+            padding-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .image, .text {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+    </style>
+<div class="container">
+    <div class="image"></div>
+
+    <div class="text">
+        <h2>Siéntete en casa</h2>
+        <hr>
+        <p>Porque sabemos lo importante que es tu casa para ti.<br>
+        Queremos que esté a tu gusto.</p>
+    </div>
+</div>
