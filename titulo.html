@@ -1,18 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Imperial+Script&display=swap" rel="stylesheet">
-    <style>
-        .titulo-personalizado {
-            font-family: 'Imperial Script', cursive;
-            font-size: 150px;
-            color: black;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1 class="titulo-personalizado">Decorate</h1>
-</body>
-</html>
+<title>Decorate</title>
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 5; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 80%; 
+    z-index: -1;
+  }
+
+  .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(135, 131, 131, 0.4);
+    mix-blend-mode: overlay;
+    z-index: 0;
+  }
+
+  h1.titulo-personalizado {
+    font-family: 'Imperial Script', cursive;
+    font-size: 150px;
+    color: black;
+    z-index: 1;
+    text-align: center;
+  }
+</style>
+  <div class="container">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline>
+          <source src="http://localhost/wordpress/wp-content/uploads/2025/04/Animacion-3D-arquitectura-de-dormitorio.mp4">
+        </video>
+      </div>
+      <div class="capa"></div>
+      <h1 class="titulo-personalizado">Decorate</h1>
+    </div>
+</div>
