@@ -1,0 +1,334 @@
+{
+  "Didact Gothic": {
+    "fontFamily": "Didact Gothic",
+    "slug": "kubio-DidactGothic-400-latin",
+    "name": "Didact Gothic",
+    "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    "fontFace": [
+      {
+        "fontFamily": "Didact Gothic",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "DidactGothic-400normal-latin.woff2"
+        ]
+      }
+    ]
+  },
+  "Italiana": {
+    "fontFamily": "Italiana",
+    "slug": "kubio-Italiana-400-latin",
+    "name": "Italiana",
+    "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    "fontFace": [
+      {
+        "fontFamily": "Italiana",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Italiana-400normal-latin.woff2"
+        ]
+      }
+    ]
+  },
+  "Open Sans": {
+    "fontFamily": "Open Sans",
+    "slug": "kubio-OpenSans-300-latin",
+    "name": "Open Sans",
+    "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    "fontFace": [
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "300",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-300italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-400italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "600",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-600italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-700italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "800",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-800italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "300",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-300normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-400normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "600",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-600normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-700normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Open Sans",
+        "fontWeight": "800",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "OpenSans-800normal-latin.woff2"
+        ]
+      }
+    ]
+  },
+  "Raleway": {
+    "fontFamily": "Raleway",
+    "slug": "kubio-Raleway-100-latin",
+    "name": "Raleway",
+    "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    "fontFace": [
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "100",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-100italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "200",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-200italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "300",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-300italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "400",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-400italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "500",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-500italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "600",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-600italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "700",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-700italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "800",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-800italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "900",
+        "fontStyle": "italic",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-900italic-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "100",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-100normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "200",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-200normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "300",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-300normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-400normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "500",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-500normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "600",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-600normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-700normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "800",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-800normal-latin.woff2"
+        ]
+      },
+      {
+        "fontFamily": "Raleway",
+        "fontWeight": "900",
+        "fontStyle": "normal",
+        "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        "subset": "latin",
+        "src": [
+          "Raleway-900normal-latin.woff2"
+        ]
+      }
+    ]
+  }
+}

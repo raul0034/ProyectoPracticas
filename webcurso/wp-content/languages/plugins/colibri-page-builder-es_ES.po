@@ -1,0 +1,800 @@
+# Translation of Plugins - Colibri Page Builder - Development (trunk) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Colibri Page Builder - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-07-17 21:26:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Colibri Page Builder - Development (trunk)\n"
+
+#: extend-builder/shortcodes/blog/post-item.php:153
+msgid "No Tag"
+msgstr "Sin etiqueta"
+
+#: extend-builder/shortcodes/blog/post-item.php:126
+msgid "No Category"
+msgstr "Sin categoría"
+
+#: extend-builder/shortcodes/blog/navigation.php:40
+msgid "Previous post:"
+msgstr "Entrada anterior:"
+
+#: extend-builder/shortcodes/blog/navigation.php:39
+msgid "Next post:"
+msgstr "Siguiente entrada:"
+
+#: extend-builder/shortcodes/blog-posts.php:349
+msgid "No posts found"
+msgstr "No se han encontrado entradas"
+
+#: src/GoogleFontsLocalLoader.php:368
+msgid "Frobidden"
+msgstr "Prohibido"
+
+#: extend-builder/customizer/customizer.php:249
+msgid "Google Fonts Settings"
+msgstr "Ajustes de Google Fonts"
+
+#: utils/survey.php:52
+msgid "Submit"
+msgstr "Enviar"
+
+#: utils/survey.php:51
+msgid "Skip"
+msgstr "Omitir"
+
+#: utils/survey.php:38
+msgid "If you have a moment, can you please give us a feedback?"
+msgstr "Si tienes un segundo, ¿nos cuentas tu opinión?"
+
+#: utils/survey.php:37
+msgid "Quick feedback"
+msgstr "Comentario rápido"
+
+#: recommendations/wpmu.php:531
+msgid "Performance Settings"
+msgstr "Ajustes de rendimiento"
+
+#: recommendations/wpmu.php:526
+msgid "Security Settings"
+msgstr "Ajustes de seguridad"
+
+#: src/OCDI/Downloader.php:83
+msgid "An error occurred while fetching file from: %1$s%2$s%3$s!%4$sReason: %5$s - %6$s."
+msgstr "Ha ocurrido un error al obtener el archivo desde: %1$s%2$s%3$s!%4$sRazón: %5$s - %6$s."
+
+#: src/OCDI/Downloader.php:62
+msgid "Missing URL for downloading a file!"
+msgstr "¡Falta la URL para descargar un archivo!"
+
+#: src/OCDI/CustomizerImporter.php:96
+msgid "Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file."
+msgstr "Error: El archivo de importación del personalizador no está en el formato correcto. Asegúrate de utilizar el archivo de importación del personalizador correcto."
+
+#: src/OCDI/CustomizerImporter.php:76
+msgid "Error: The customizer import file is missing! File path: %s"
+msgstr "Error: ¡Falta el archivo de importación del personalizador! Ruta del archivo: %s"
+
+#: src/OCDI/CustomizerImporter.php:45
+msgid "Customizer settings import finished!"
+msgstr "¡Importación de los ajustes del personalizador finalizada!"
+
+#: src/OCDI/CustomizerImporter.php:40 src/OCDI/CustomizerImporter.php:47
+msgid "Importing customizer settings"
+msgstr "Importando los ajustes del personalizador"
+
+#: src/OCDI/WidgetImporter.php:327
+msgid "No results for widget import!"
+msgstr "¡No hay resultados para la importación de widgets!"
+
+#: src/OCDI/WidgetImporter.php:280
+msgid "No Title"
+msgstr "Sin título"
+
+#: src/OCDI/WidgetImporter.php:274
+msgid "Imported to Inactive"
+msgstr "Importado a «inactivo»"
+
+#: src/OCDI/WidgetImporter.php:271
+msgid "Imported"
+msgstr "Importado"
+
+#: src/OCDI/WidgetImporter.php:213
+msgid "Widget already exists"
+msgstr "El widget ya existe"
+
+#: src/OCDI/WidgetImporter.php:180
+msgid "Site does not support widget"
+msgstr "El sitio no es compatible con widgets"
+
+#: src/OCDI/WidgetImporter.php:159
+msgid "Sidebar does not exist in theme (moving widget to Inactive)"
+msgstr "La barra lateral no existe en el tema (moviendo los widgets a «inactivo»)"
+
+#: src/OCDI/WidgetImporter.php:121
+msgid "Error: Widget import data could not be read. Please try a different file."
+msgstr "Error: No se han podido leer los datos de importación de widgets. Por favor, prueba un archivo diferente."
+
+#: src/OCDI/WidgetImporter.php:90
+msgid "Error: Widget import file could not be found."
+msgstr "Error: No se ha podido encontrar el archivo de importación de widgets."
+
+#: src/OCDI/WidgetImporter.php:42 src/OCDI/WidgetImporter.php:53
+msgid "Importing widgets"
+msgstr "Importando los widgets"
+
+#: src/OCDI/OneClickDemoImport.php:412
+msgid "%1$sThe demo import has finished, but there were some import errors.%2$sMore details about the errors can be found in this %3$s%5$slog file%6$s%4$s%7$s"
+msgstr "%1$sLa importación de la demostración ha finalizado con algunos errores.%2$sSe pueden encontrar más detalles a cerca de los errores en este %3$s%5$sarchivo de registro%6$s%4$s%7$s"
+
+#: src/OCDI/OneClickDemoImport.php:402
+msgid "%1$s%3$sThat's it, all done!%4$s%2$sThe demo import has finished. Please check your page and make sure that everything has imported correctly. If it did, you can deactivate the %3$sOne Click Demo Import%4$s plugin, because it has done its job.%5$s"
+msgstr "%1$s%3$sYa está, ¡terminado!%4$s%2$sLa importación de la demostración ha finalizado. Comprueba tu página y asegúrate de que se ha importado todo correctamente. Si es así, puedes desactiva el plugin %3$sImportación de demostración en un clic%4$s porque ya ha hecho su trabajo.%5$s"
+
+#: src/OCDI/OneClickDemoImport.php:389
+msgid "%1$s%6$sWasn't this a great One Click Demo Import experience?%7$s Created and maintained by %3$sProteusThemes%4$s. %2$s%5$sClick to Tweet!%4$s%8$s"
+msgstr "%1$s%6$sLa experiencia de la importación de demostración en un solo clic ha sido increíble, ¿no?%7$s Creada y animada por %3$sProteusThemes%4$s. %2$s%5$s¡Haz clic para publicar un Tweet!%4$s%8$s"
+
+#: src/OCDI/OneClickDemoImport.php:386
+msgid "Just used One Click Demo Import plugin and it was awesome! Thanks @ProteusThemes! #OCDI https://www.proteusthemes.com/"
+msgstr "¡Acabo de usar el plugin Importar demostración en un solo clic y ha sido genial! ¡Gracias, @ProteusThemes! #OCDI https://www.proteusthemes.com/"
+
+#: src/OCDI/OneClickDemoImport.php:265
+msgid "No import files specified!"
+msgstr "¡No se han especificado archivos para importar!"
+
+#: src/OCDI/OneClickDemoImport.php:257
+msgid "The import files for: %s were successfully downloaded!"
+msgstr "¡Los archivos de importación para %s han sido descargados correctamente!"
+
+#: src/OCDI/OneClickDemoImport.php:250 src/OCDI/OneClickDemoImport.php:261
+msgid "Downloaded files"
+msgstr "Archivos descargados"
+
+#: src/OCDI/OneClickDemoImport.php:238
+msgid "Manually uploaded files"
+msgstr "Archivos subidos manualmente"
+
+#: src/OCDI/OneClickDemoImport.php:188
+msgid "Selected demo import:"
+msgstr "Importación de demostración seleccionada:"
+
+#: src/OCDI/ReduxImporter.php:58
+msgid "The Redux option name: %s, was not found in this WP site, so it was not imported!"
+msgstr "¡La opción Redux %s no se ha encontrado en este sitio WP, por lo que no se ha importado!"
+
+#: src/OCDI/ReduxImporter.php:53
+msgid "Redux settings import for: %s finished successfully!"
+msgstr "¡La importación de los ajustes de Redux %s ha finalizado correctamente!"
+
+#: src/OCDI/ReduxImporter.php:34 src/OCDI/ReduxImporter.php:55
+#: src/OCDI/ReduxImporter.php:67
+msgid "Importing Redux settings"
+msgstr "Ajustes de importación de Redux"
+
+#: src/OCDI/ReduxImporter.php:25
+msgid "The Redux plugin is not activated, so the Redux import was skipped!"
+msgstr "¡El plugin Redux no está activo, por lo que se ha omitido la importación de Redux!"
+
+#: src/OCDI/Helpers.php:576 src/OCDI/Helpers.php:577 src/OCDI/Helpers.php:578
+#: src/OCDI/Helpers.php:579
+msgid "not defined!"
+msgstr "¡Sin definir!"
+
+#: src/OCDI/Helpers.php:573
+msgid "Files info:%1$sSite URL = %2$s%1$sData file = %3$s%1$sWidget file = %4$s%1$sCustomizer file = %5$s%1$sRedux files:%1$s%6$s"
+msgstr "Información de archivos:%1$sURL del sitio = %2$s%1$sArchivo de datos = %3$s%1$sArchivo de widget = %4$s%1$sArchivo del personalizador = %5$s%1$sArchivos de Redux:%1$s %6$s"
+
+#: src/OCDI/Helpers.php:569
+msgid "Initial max execution time = %s"
+msgstr "Tiempo máximo de ejecución inicial = %s"
+
+#: src/OCDI/Helpers.php:483
+msgid "The import files were successfully uploaded!"
+msgstr "¡Los archivos de importación ha sido subidos correctamente!"
+
+#: src/OCDI/Helpers.php:473
+msgid "Redux file was not uploaded. Error: %s"
+msgstr "El archivo Redux no se subió. Error: %s"
+
+#: src/OCDI/Helpers.php:456
+msgid "Missing Redux option name! Please also enter the Redux option name!"
+msgstr "Falta el nombre de la opción de Redux.  ¡Introduce también el nombre de la opción Redux!"
+
+#: src/OCDI/Helpers.php:443
+msgid "Customizer file was not uploaded. Error: %s"
+msgstr "No se ha subido el archivo del personalizador. Error: %s"
+
+#: src/OCDI/Helpers.php:427
+msgid "Widget file was not uploaded. Error: %s"
+msgstr "No se ha subido el archivo del widget. Error: %s"
+
+#: src/OCDI/Helpers.php:415 src/OCDI/Helpers.php:431 src/OCDI/Helpers.php:447
+#: src/OCDI/Helpers.php:458 src/OCDI/Helpers.php:477 src/OCDI/Helpers.php:485
+msgid "Upload files"
+msgstr "Subir archivos"
+
+#: src/OCDI/Helpers.php:411
+msgid "Content file was not uploaded. Error: %s"
+msgstr "El archivo de contenido no se subió. Error: %s"
+
+#: src/OCDI/Helpers.php:369
+msgid "%sYour user role isn't high enough. You don't have permission to import demo data.%s"
+msgstr "%sTu perfil de usuario no es lo suficientemente elevado. No tienes permiso para importar los datos de la demostración.%s"
+
+#: src/OCDI/Helpers.php:335
+msgid "One Click Demo Import - "
+msgstr "Importación de demostración en un solo clic - "
+
+#: src/OCDI/Helpers.php:292
+msgid "An error occurred while reading a file from your server! Tried reading file from path: %s%s."
+msgstr "¡Ha ocurrido un error al leer un archivo de tu servidor! Se ha intentado leer el archivo de la ruta: %s%s."
+
+#: src/OCDI/Helpers.php:261
+msgid "Your WordPress login credentials don't allow to use WP_Filesystem!"
+msgstr "¡Tus credenciales de acceso de WordPress no te permiten usar «WP_Filesystem»!"
+
+#: src/OCDI/Helpers.php:253
+msgid "An error occurred while retrieving reading/writing permissions to your server (could not retrieve WP filesystem credentials)!"
+msgstr "¡Ha ocurrido un error al recuperar los permisos de lectura/escritura de tu servidor (no se han podido recuperar las credenciales del sistema de archivos WP)!"
+
+#: src/OCDI/Helpers.php:234 src/OCDI/OneClickDemoImport.php:120
+msgid "One Click Demo Import"
+msgstr "One Click Demo Import"
+
+#: src/OCDI/Helpers.php:223
+msgid "This WordPress page does not have %sdirect%s write file access. This plugin needs it in order to save the demo import xml file to the upload directory of your site. You can change this setting with these instructions: %s."
+msgstr "Esta página de WordPress no tiene acceso %sdirecto%s de escritura de archivos. Este plugin lo necesita para poder guardar el archivo XML de importación de la demostración en el directorio de subidas de tu sitio. Puedes cambiar este ajuste con estas instrucciones: %s."
+
+#: src/OCDI/Helpers.php:201 src/OCDI/Helpers.php:524
+msgid "An error occurred while writing file to your server! Tried to write a file to: %s%s."
+msgstr "¡Ha ocurrido un error al escribir un archivo en tu servidor! Se ha intentado escribir un archivo en: %s%s."
+
+#: src/OCDI/Importer.php:162
+msgid "New AJAX call!"
+msgstr "¡Nueva llamada AJAX!"
+
+#: src/OCDI/WPCLICommands.php:287
+msgid "There were some issues while importing customizer settings!"
+msgstr "¡Hubo algunos problemas al importar los ajustes del personalizador!"
+
+#: src/OCDI/WPCLICommands.php:285
+msgid "Customizer settings imported successfully!"
+msgstr "¡Los ajustes del personalizador se importaron correctamente!"
+
+#: src/OCDI/WPCLICommands.php:280
+msgid "Importing customizer settings..."
+msgstr "Importando los ajustes del personalizador..."
+
+#: src/OCDI/WPCLICommands.php:275
+msgid "Customizer import file provided does not exist! Skipping this import!"
+msgstr "¡El archivo de importación del personalizador proporcionado no existe!  ¡Omitiendo esta importación!"
+
+#: src/OCDI/WPCLICommands.php:256
+msgid "There were some issues while importing widgets!"
+msgstr "¡Ha habido algunos algunos problemas al importar widgets!"
+
+#: src/OCDI/WPCLICommands.php:254
+msgid "Widgets imported successfully!"
+msgstr "¡Widgets importados correctamente!"
+
+#: src/OCDI/WPCLICommands.php:249
+msgid "Importing widgets..."
+msgstr "Importando widgets ..."
+
+#: src/OCDI/WPCLICommands.php:244
+msgid "Widgets import file provided does not exist! Skipping this import!"
+msgstr "¡El archivo de importación de widgets proporcionado no existe! ¡Omitiendo esta importación!"
+
+#: src/OCDI/WPCLICommands.php:225
+msgid "There were some issues while importing the content!"
+msgstr "¡Ha habido algunos problemas al importar el contenido!"
+
+#: src/OCDI/WPCLICommands.php:223
+msgid "Content import finished!"
+msgstr "¡Importación de contenido finalizada!"
+
+#: src/OCDI/WPCLICommands.php:218
+msgid "Importing content"
+msgstr "Importando el contenido"
+
+#: src/OCDI/WPCLICommands.php:216
+msgid "Importing content (this might take a while)..."
+msgstr "Importando contenido (esto puede llevar un rato) ..."
+
+#: src/OCDI/WPCLICommands.php:206
+msgid "Content import file provided does not exist! Skipping this import!"
+msgstr "¡El archivo de importación de contenido proporcionado no existe! ¡Omitiendo esta importación!"
+
+#: src/OCDI/WPCLICommands.php:187
+msgid "Executing action: %s ..."
+msgstr "Ejecutando acción: %s ..."
+
+#: src/OCDI/WPCLICommands.php:162
+msgid "Here are the predefined demo imports:"
+msgstr "Aquí están las importaciones de demostración predefinidas:"
+
+#: src/OCDI/WPCLICommands.php:159
+msgid "There are no predefined demo imports for currently active theme!"
+msgstr "¡No hay importaciones de demostración predefinidas para el tema actualmente activo!"
+
+#: src/OCDI/WPCLICommands.php:151
+msgid "Predefined import finished!"
+msgstr "¡Importación predefinida finalizada!"
+
+#: src/OCDI/WPCLICommands.php:131
+msgid "Importing..."
+msgstr "Importando..."
+
+#: src/OCDI/WPCLICommands.php:129
+msgid "Demo import files retrieved successfully!"
+msgstr "¡Archivos de importación de demostración recuperados correctamente!"
+
+#: src/OCDI/WPCLICommands.php:126
+msgid "Demo import files could not be retrieved!"
+msgstr "¡No se han podido recuperar los archivos de importación de demostración!"
+
+#: src/OCDI/WPCLICommands.php:121
+msgid "Preparing the demo import files..."
+msgstr "Preparando los archivos de importación de demostración ..."
+
+#: src/OCDI/WPCLICommands.php:118
+msgid "Selected predefined demo import: %s"
+msgstr "Importación de demostración predefinida seleccionada: %s"
+
+#: src/OCDI/WPCLICommands.php:113
+msgid "Predefined demo import started! All other parameters will be ignored!"
+msgstr "¡Se inició la importación de demostración predefinida!  ¡Todos los demás parámetros serán ignorados!"
+
+#: src/OCDI/WPCLICommands.php:106
+msgid "The supplied predefined index does not exist! Please take a look at the available predefined demo imports:"
+msgstr "¡El índice predefinido proporcionado no existe! Echa un vistazo a las importaciones de demostración predefinidas disponibles:"
+
+#: src/OCDI/WPCLICommands.php:100
+msgid "The \"predefined\" parameter should be a number (an index of the OCDI predefined demo import)!"
+msgstr "¡El parámetro «predefinido» debe ser un número (un índice de la importación de demostración predefinida de OCDI)!"
+
+#: src/OCDI/WPCLICommands.php:49
+msgid "At least one of the possible options should be set! Check them with --help"
+msgstr "¡Debe establecerse al menos una de las opciones posibles!  Compruébalas con --help"
+
+#: extend-builder/customizer/customizer.php:162
+msgid "Multi Language"
+msgstr "Multi idioma"
+
+#: demo-importer/demo-install-popup.php:19 demo-importer/pro-only-popup.php:14
+msgid "Your current design will be completely overwritten by the new template. This process is irreversible. If you wish to be able to go back to the current design, please create a backup of your site before proceeding with the import."
+msgstr "Tu diseño actual será completamente sobrescrito por la nueva plantilla. Este proceso es irreversible. Si deseas poder volver al diseño actual, crea una copia de seguridad de tu sitio antes de proceder a la importación."
+
+#: demo-importer/ocdi-page.php:113
+msgid "Importing, please wait!"
+msgstr "Importando. ¡Por favor, espera!"
+
+#: demo-importer/ocdi-page.php:108 src/OCDI/Helpers.php:235
+#: src/OCDI/OneClickDemoImport.php:121
+msgid "Import Demo Data"
+msgstr "Importar datos de demostración"
+
+#: demo-importer/ocdi-page.php:100
+msgid "Choose a DAT file for customizer import:"
+msgstr "Elige un archivo DAT para la importación del personalizador:"
+
+#: demo-importer/ocdi-page.php:93
+msgid "Choose a WIE or JSON file for widget import:"
+msgstr "Elige un archivo WIE o JSON para la importación de widgets:"
+
+#: demo-importer/ocdi-page.php:86
+msgid "Choose a XML file for content import:"
+msgstr "Elige un archivo XML para la importación de contenido:"
+
+#: demo-importer/ocdi-page.php:82
+msgid "Manual demo files upload"
+msgstr "Subida manual de archivos de demostración"
+
+#: demo-importer/ocdi-page.php:76
+msgid "Before you begin, make sure all the required plugins are activated."
+msgstr "Antes de empezar, asegúrate de que están activados todos los plugins necesarios."
+
+#: demo-importer/ocdi-page.php:64
+msgid "%sWarning: your server is using %sPHP safe mode%s. This means that you might experience server timeout errors.%s"
+msgstr "%sAdvertencia: tu servidor está usando el %smodo seguro de PHP%s. Esto significa que puedes experimentar errores de tiempo de espera del servidor.%s"
+
+#: src/PageBuilder.php:224
+msgid "Edit template with Colibri"
+msgstr "Editar plantilla con Colibri"
+
+#: extend-builder/customizer/customizer.php:179
+msgid "Templates"
+msgstr "Plantillas"
+
+#: extend-builder/shortcodes/wpforms-colibri-template.php:17
+msgid "This is a simple contact form template designed to best fit the Colibri theme design. You can add and remove fields as needed."
+msgstr "Se trata de una sencilla plantilla de formulario de contacto diseñada para adaptarse lo mejor posible al diseño del tema Colibri. Puedes añadir y quitar campos según necesites."
+
+#: extend-builder/shortcodes/wpforms-colibri-template.php:15
+msgid "Colibri Contact Form Template"
+msgstr "Plantilla de formulario de contacto de Colibri"
+
+#: demo-importer/loop.php:30
+msgid "Try Online"
+msgstr "Probar en línea"
+
+#: src/PageBuilder.php:266
+msgid "Upgrade to PRO"
+msgstr "Actualizar a PRO"
+
+#: src/PageBuilder.php:258
+msgid "Demo Sites"
+msgstr "Sitios de demostración"
+
+#: src/PageBuilder.php:244 src/PageBuilder.php:251
+msgid "Get Started"
+msgstr "Primeros pasos"
+
+#: src/PageBuilder.php:227
+msgid "Edit with Colibri"
+msgstr "Editar con Colibri"
+
+#: src/PageBuilder.php:201
+msgid "Colibri"
+msgstr "Colibri"
+
+#: src/PageBuilder.php:1115 src/PageBuilder.php:1206
+#: utils/editor-overlay.php:95
+msgid "Edit in Colibri"
+msgstr "Editar en Colibri"
+
+#: utils/editor-overlay.php:99
+msgid "Edit In Default Editor"
+msgstr "Editar en el editor por defecto"
+
+#: utils/editor-overlay.php:70
+msgid "This post was previously edited in Customizer. You can continue in the Default Editor, but you may lose data and formatting."
+msgstr "Esta entrada se ha editado anteriormente en el personalizador. Puedes continuar en el editor por defecto, pero puedes perder los datos y el formato."
+
+#: demo-importer/demo-install-popup.php:51
+msgid "Start importing"
+msgstr "Comenzar la importación"
+
+#: demo-importer/demo-install-popup.php:26
+msgid "The following plugins will be installed and activated as they are part of the demo"
+msgstr "Los siguientes se instalarán y activarán, ya que forman parte de la demostración"
+
+#: demo-importer/demo-install-popup.php:13
+msgid "You are about to import a demo site"
+msgstr "Estás a punto de importar un sitio de demostración"
+
+#: demo-importer/loop.php:34
+msgid "Import"
+msgstr "Importar"
+
+#: demo-importer/list.php:14
+msgid "The import process can take a few minutes."
+msgstr "El proceso de importación puede durar unos minutos."
+
+#: demo-importer/list.php:11
+msgid "Please wait!"
+msgstr "¡Por favor, espera!"
+
+#: demo-importer/tab_partial.php:6
+msgid "Import Demo sites with one click"
+msgstr "Importar sitios de demostración con un solo clic"
+
+#: demo-importer/demo-install-popup.php:47 demo-importer/pro-only-popup.php:24
+msgid "Check all PRO features"
+msgstr "Comprueba todas las características PRO"
+
+#: demo-importer/demo-install-popup.php:42 demo-importer/pro-only-popup.php:20
+msgid "This demo site is available only in %s"
+msgstr "Este sitio de demostración solo está disponible en %s"
+
+#: demo-importer/demo-install-popup.php:17 demo-importer/pro-only-popup.php:12
+msgid "Posts, pages, images, widgets, menus and other theme settings will get imported."
+msgstr "Se importarán entradas, páginas, imágenes, widgets, menús y otros ajustes del tema."
+
+#: demo-importer/demo-install-popup.php:15 demo-importer/pro-only-popup.php:10
+msgid "Current pages will be moved to trash. You can restore the content back at any time."
+msgstr "Las páginas actuales se moverán a la papelera. Puedes restaurar el contenido en cualquier momento."
+
+#: demo-importer/pro-only-popup.php:8
+msgid "You are about to import a demo site:"
+msgstr "Estás a punto de importar un sitio de demostración:"
+
+#: utils/functions.php:28
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+#: src/PageBuilder.php:1294
+msgid "Page needs to be published before editing it in customizer"
+msgstr "La página debe publicarse antes de editarla en el personalizador"
+
+#: src/PageBuilder.php:1200
+msgid "Set Page Name"
+msgstr "Establecer el nombre de la página"
+
+#: src/PageBuilder.php:1198
+msgid "Set a name for the new page"
+msgstr "Establecer un nombre para la nueva página"
+
+#: src/PageBuilder.php:1162
+msgid "Enter title here"
+msgstr "Introduce el título aquí"
+
+#: src/Customizer/Customizer.php:187
+msgid "Loading, please wait..."
+msgstr "Cargando, por favor espera..."
+
+#: src/Customizer/Panels/ContentPanel.php:67
+msgid "Page Settings"
+msgstr "Ajustes de la página"
+
+#: src/Customizer/Panels/ContentPanel.php:66
+msgid "Add Section"
+msgstr "Añadir una sección"
+
+#: src/Customizer/Panels/ContentPanel.php:22
+msgid "Add sections into page"
+msgstr "Añadir secciones a la página"
+
+#: src/Customizer/Panels/ContentPanel.php:16
+msgid "Reorder and remove sections"
+msgstr "Reordenar y eliminar secciones"
+
+#: demo-importer/ocdi-page.php:40 src/DemoImport/Views/PageView.php:112
+msgid "Importing the following demo site"
+msgstr "Importando el siguiente sitio de demostración"
+
+#: demo-importer/ocdi-page.php:39 src/DemoImport/Views/PageView.php:111
+msgid "Activating"
+msgstr "Activando"
+
+#: demo-importer/ocdi-page.php:38 src/DemoImport/Views/PageView.php:110
+msgid "Installing"
+msgstr "Instalando"
+
+#: demo-importer/ocdi-page.php:37 src/DemoImport/Views/PageView.php:109
+msgid "Installing Plugins"
+msgstr "Instalando los plugins"
+
+#: demo-importer/ocdi-page.php:36 src/DemoImport/Views/PageView.php:108
+msgid "Active"
+msgstr "Activa"
+
+#: demo-importer/ocdi-page.php:35 src/DemoImport/Views/PageView.php:107
+msgid "Installed"
+msgstr "Instalado"
+
+#: demo-importer/ocdi-page.php:34 src/DemoImport/Views/PageView.php:106
+msgid "Not installed"
+msgstr "No instalado"
+
+#: demo-importer/ocdi-page.php:32 src/DemoImport/Views/PageView.php:104
+#: src/OCDI/OneClickDemoImport.php:187
+msgid "Yes, import!"
+msgstr "¡Sí, importar!"
+
+#: demo-importer/ocdi-page.php:31 src/DemoImport/Views/PageView.php:103
+#: src/OCDI/OneClickDemoImport.php:186
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: demo-importer/ocdi-page.php:30 src/DemoImport/Views/PageView.php:102
+#: src/OCDI/OneClickDemoImport.php:185
+msgid "Are you sure?"
+msgstr "¿Seguro?"
+
+#: demo-importer/ocdi-page.php:28 src/DemoImport/Views/PageView.php:100
+#: src/OCDI/OneClickDemoImport.php:184
+msgid "No preview image defined for this import."
+msgstr "No se ha definido una vista previa de la imagen para esta importación."
+
+#: extend-builder/shortcodes/blog/navigation.php:185
+msgid "Posts navigation"
+msgstr "Navegación por las entradas"
+
+#: extend-builder/shortcodes/blog/navigation.php:180
+msgid "Page"
+msgstr "Página"
+
+#: extend-builder/shortcodes/blog/navigation.php:56
+msgid "Post navigation"
+msgstr "Navegación por las entradas"
+
+#: extend-builder/shortcodes/lana-breadcrumb.php:205
+msgid "Page not found"
+msgstr "No se ha encontrado la página"
+
+#: extend-builder/shortcodes/lana-breadcrumb.php:195
+msgid "Search Results for &#8220;%s&#8221;"
+msgstr "Resultados de buscar &#8220;%s&#8221;"
+
+#: extend-builder/shortcodes/colibri_page_title.php:113
+msgid "Archives"
+msgstr "Archivos"
+
+#. translators: Taxonomy term archive title. 1: Taxonomy singular name, 2:
+#. Current taxonomy term
+#: extend-builder/shortcodes/colibri_page_title.php:111
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#. translators: Post type archive title. 1: Post type name
+#: extend-builder/shortcodes/colibri_page_title.php:107
+msgid "Archives: %s"
+msgstr "Archivo: %s"
+
+#: extend-builder/shortcodes/colibri_page_title.php:103
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chats"
+
+#: extend-builder/shortcodes/colibri_page_title.php:101
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: extend-builder/shortcodes/colibri_page_title.php:99
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Estados"
+
+#: extend-builder/shortcodes/colibri_page_title.php:97
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Enlaces"
+
+#: extend-builder/shortcodes/colibri_page_title.php:95
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Citas"
+
+#: extend-builder/shortcodes/colibri_page_title.php:93
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Vídeos"
+
+#: extend-builder/shortcodes/colibri_page_title.php:91
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Imágenes"
+
+#: extend-builder/shortcodes/colibri_page_title.php:89
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerías"
+
+#: extend-builder/shortcodes/colibri_page_title.php:87
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Minientradas"
+
+#. translators: Daily archive title. 1: Date
+#: extend-builder/shortcodes/colibri_page_title.php:83
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "j \\d\\e F \\d\\e Y"
+
+#. translators: Monthly archive title. 1: Month name and year
+#: extend-builder/shortcodes/colibri_page_title.php:78
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#. translators: Yearly archive title. 1: Year
+#: extend-builder/shortcodes/colibri_page_title.php:73
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#. translators: Category archive title. 1: Category name
+#. translators: Tag archive title. 1: Tag name
+#. translators: Author archive title. 1: Author name
+#. translators: Yearly archive title. 1: Year
+#. translators: Monthly archive title. 1: Month name and year
+#. translators: Daily archive title. 1: Date
+#: extend-builder/shortcodes/colibri_page_title.php:43
+#: extend-builder/shortcodes/colibri_page_title.php:58
+#: extend-builder/shortcodes/colibri_page_title.php:63
+#: extend-builder/shortcodes/colibri_page_title.php:68
+#: extend-builder/shortcodes/colibri_page_title.php:73
+#: extend-builder/shortcodes/colibri_page_title.php:78
+#: extend-builder/shortcodes/colibri_page_title.php:83
+msgid "%s"
+msgstr "%s"
+
+#: extend-builder/extend-builder.php:82
+msgid "Content Editor"
+msgstr "Editor de contenido"
+
+#: extend-builder/gutenberg.php:11
+msgid "Color %d"
+msgstr "Color %d"
+
+#: extend-builder/register.php:55
+msgid "Blog sidebar widget area"
+msgstr "Área de widgets de la barra lateral del blog"
+
+#: extend-builder/customizer/customizer.php:231
+msgid "Global Color Scheme"
+msgstr "Esquema de color global"
+
+#: extend-builder/customizer/customizer.php:213
+msgid "Effects"
+msgstr "Efectos"
+
+#: extend-builder/customizer/customizer.php:196
+msgid "Spacing"
+msgstr "Espaciado"
+
+#: extend-builder/customizer/customizer.php:143
+msgid "Typography"
+msgstr "Tipografía"
+
+#: extend-builder/customizer/editor-data/index.php:167
+msgid "Medium Large"
+msgstr "Medio grande"
+
+#: extend-builder/customizer/editor-data/index.php:166
+msgid "Post Thumbnail"
+msgstr "Miniatura de la entrada"
+
+#: extend-builder/customizer/editor-data/index.php:165
+msgid "Full Size"
+msgstr "Tamaño completo"
+
+#: extend-builder/customizer/editor-data/index.php:164
+msgid "Large"
+msgstr "Grande"
+
+#: extend-builder/customizer/editor-data/index.php:163
+msgid "Medium"
+msgstr "Medio"
+
+#: extend-builder/customizer/editor-data/index.php:162
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: extend-builder/partials/blog/searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Buscar"
+
+#: extend-builder/partials/blog/searchform.php:8
+msgid "Search &hellip;"
+msgstr "Buscar &hellip;"
+
+#: extend-builder/partials/blog/searchform.php:5
+msgctxt "label"
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: extend-builder/partials/blog/comments.php:49
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: extend-builder/partials/blog/comments.php:38
+msgid "Newer Comments <i class=\"font-icon-post fa fa-angle-double-right\"></i>"
+msgstr "Comentarios más recientes <i class=\"font-icon-post fa fa-angle-double-right\"></i>"
+
+#: extend-builder/partials/blog/comments.php:34
+msgid "<i class=\"font-icon-post fa fa-angle-double-left\"></i> Older Comments"
+msgstr "<i class=\"font-icon-post fa fa-angle-double-left\"></i> Comentarios anteriores"
+
+#. Author of the plugin
+#: colibri-page-builder.php
+msgid "ExtendThemes"
+msgstr "ExtendThemes"
+
+#. Description of the plugin
+#: colibri-page-builder.php
+msgid "Colibri Page Builder adds drag and drop page builder functionality to the ColibriWP theme."
+msgstr "Colibri Page Builder añade la funcionalidad de arrastrar y soltar del constructor de páginas al tema ColibriWP."
+
+#. Plugin Name of the plugin
+#: colibri-page-builder.php
+msgid "Colibri Page Builder"
+msgstr "Colibri Page Builder"

@@ -1,0 +1,93 @@
+# Translation of Plugins - Blocks Animation: CSS Animations for Gutenberg Blocks - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Blocks Animation: CSS Animations for Gutenberg Blocks - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-05 18:22:20+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Blocks Animation: CSS Animations for Gutenberg Blocks - Stable (latest release)\n"
+
+#: class-blocks-animation.php:326
+msgid "Learn More"
+msgstr "Más información"
+
+#. translators: %s: Otter Blocks
+#: class-blocks-animation.php:321
+msgid "Install & Activate %s"
+msgstr "Instalar y activar %s"
+
+#. translators: %s: Otter Blocks
+#: class-blocks-animation.php:319
+msgid "Activate %s"
+msgstr "Activar %s"
+
+#: class-blocks-animation.php:309
+msgid "Otter is a Gutenberg Blocks page builder plugin that adds extra functionality to the WordPress Block Editor (also known as Gutenberg) for a better page building experience without the need for traditional page builders."
+msgstr "Otter es un plugin de construcción de páginas de bloques de Gutenberg que añade funcionalidad adicional al editor de bloques de WordPress (también conocido como Gutenberg) para una mejor experiencia de construcción de páginas sin necesidad de los constructores de páginas tradicionales."
+
+#: class-blocks-animation.php:304
+msgid "Visibility Conditions"
+msgstr "Condiciones de visibilidad"
+
+#: class-blocks-animation.php:303
+msgid "Enhanced Animations"
+msgstr "Animaciones mejoradas"
+
+#: class-blocks-animation.php:302
+msgid "Add-on Blocks"
+msgstr "Extensión de bloques"
+
+#. translators: %1$s: Add-on Blocks, %2$s: Enhanced Animations, %3$s:
+#. Visibility Conditions
+#: class-blocks-animation.php:301
+msgid "Power Up Your Site with %1$s, %2$s, %3$s, and more!"
+msgstr "¡Potencia tu sitio con %1$s, %2$s, %3$s, y más!"
+
+#: class-blocks-animation.php:294
+msgid "Otter Blocks preview"
+msgstr "Vista previa de los bloques de Otter"
+
+#: class-blocks-animation.php:291
+msgid "Dismiss this notice."
+msgstr "Descartar este aviso."
+
+#: class-blocks-animation.php:286
+msgid "Done"
+msgstr "Hecho"
+
+#: class-blocks-animation.php:285
+msgid "Installing"
+msgstr "Instalando"
+
+#: class-blocks-animation.php:284
+msgid "Activating"
+msgstr "Activando"
+
+#. Author URI of the plugin
+#: blocks-animation.php
+msgid "https://themeisle.com"
+msgstr "https://themeisle.com"
+
+#. Author of the plugin
+#: blocks-animation.php
+msgid "ThemeIsle"
+msgstr "ThemeIsle"
+
+#. Description of the plugin
+#: blocks-animation.php
+msgid "Blocks Animation allows you to add CSS Animations to all of your Gutenberg blocks in the most elegent way."
+msgstr "Blocks Animation te permite añadir animaciones CSS a todos tus bloques de Gutenberg de la forma más elegante."
+
+#. Plugin URI of the plugin
+#: blocks-animation.php
+msgid "https://github.com/Codeinwp/otter-blocks"
+msgstr "https://github.com/Codeinwp/otter-blocks"
+
+#. Plugin Name of the plugin
+#: blocks-animation.php
+msgid "Blocks Animation: CSS Animations for Gutenberg Blocks"
+msgstr "Blocks Animation: Animaciones CSS para bloques de Gutenberg"
