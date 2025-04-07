@@ -1,15 +1,157 @@
-# Translation of Plugins - Spectra &#8211; WordPress Gutenberg Blocks - Stable (latest release) in Spanish (Spain)
-# This file is distributed under the same license as the Plugins - Spectra &#8211; WordPress Gutenberg Blocks - Stable (latest release) package.
+# Translation of Plugins - Spectra Gutenberg Blocks – Website Builder for the Block Editor - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Spectra Gutenberg Blocks – Website Builder for the Block Editor - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-02-13 16:13:56+0000\n"
+"PO-Revision-Date: 2025-03-31 17:29:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/4.0.1\n"
 "Language: es\n"
-"Project-Id-Version: Plugins - Spectra &#8211; WordPress Gutenberg Blocks - Stable (latest release)\n"
+"Project-Id-Version: Plugins - Spectra Gutenberg Blocks – Website Builder for the Block Editor - Stable (latest release)\n"
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:308
+msgid "Other"
+msgstr "Otro"
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:303
+msgid "Please tell us more about the feature."
+msgstr "Por favor, cuéntanos más sobre esa característica."
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:302
+msgid "It's missing a specific feature."
+msgstr "Le falta una característica específica."
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:297
+msgid "Could you please specify which plugin?"
+msgstr "¿Podrías especificar qué plugin?"
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:296
+msgid "I found a better alternative plugin."
+msgstr "He encontrado un plugin que es una mejor alternativa."
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:291
+msgid "Please tell us more about what went wrong?"
+msgstr "Por favor, cuéntanos más sobre qué salió mal"
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:290
+msgid "The plugin isn't working properly."
+msgstr "El plugin no está funcionando correctamente."
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:285
+msgid "How can we assist you?"
+msgstr "¿Cómo podemos ayudarte?"
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:284
+msgid "This is a temporary deactivation for testing."
+msgstr "Es una desactivación temporal para hacer pruebas."
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:155
+msgid "Skip & Deactivate"
+msgstr "Omitir y desactivar"
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:154
+msgid "Submit & Deactivate"
+msgstr "Enviar y desactivar"
+
+#. translators: %1$s: link html start, %2$s: link html end
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:143
+msgid "Need help from our experts? %1$sClick here to contact us.%2$s"
+msgstr "¿Necesitas ayuda de nuestros expertos? %1$sHaz clic aquí para contactar con nosotros.%2$s"
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:134
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:309
+msgid "Please tell us more details."
+msgstr "Por favor, cuéntanos más detalles."
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:83
+msgid "If you have a moment, please share why you are deactivating the plugin."
+msgstr "Si tienes un momento, por favor, dinos por qué estás desactivando el plugin."
+
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:80
+msgid "Quick Feedback"
+msgstr "Comentario rápido"
+
+#: lib/bsf-analytics/classes/class-bsf-analytics-helper.php:28
+msgid "Oops! Something went wrong. Please refresh the page and try again."
+msgstr "¡Vaya! Algo ha ido mal. Por favor, recarga la página e inténtalo de nuevo."
+
+#: lib/bsf-analytics/class-bsf-analytics.php:439
+msgid "Learn More."
+msgstr "Aprende más."
+
+#: lib/astra-notices/class-astra-notices.php:153
+msgid "Invalid notice ID."
+msgstr "ID de aviso no válido."
+
+#: classes/class-uagb-init-blocks.php:1200
+msgid "Upgrade to Spectra Pro to unlock amazing features!"
+msgstr "¡Actualiza a Spectra Pro para desbloquear características increíbles!"
+
+#: classes/class-uagb-init-blocks.php:821
+msgid "Extensions"
+msgstr "Extensiones"
+
+#: admin-core/inc/admin-menu.php:444
+msgid "Here you can compare the features of Free and Pro versions."
+msgstr "Aquí puedes comparar las características de las versiones gratuita y Pro."
+
+#: admin-core/inc/admin-menu.php:443
+msgid "Free vs Pro Features"
+msgstr "Características gratis frente a Pro"
+
+#: admin-core/inc/admin-menu.php:239
+msgid "Could not activate theme. Please activate from the Themes page."
+msgstr "No se pudo activar el tema. Actívalo desde la página de Temas."
+
+#: admin-core/inc/admin-menu.php:237
+msgid "Could not activate plugin. Please activate from the Plugins page."
+msgstr "No se ha podido activar el plugin. Actívalo desde la página de plugins."
+
+#: admin-core/inc/admin-menu.php:229
+msgid "Theme Activated."
+msgstr "Tema activado."
+
+#: admin-core/inc/admin-menu.php:215
+msgid "Theme activation is disabled for you on this site."
+msgstr "La activación de temas está desactivada para ti en este sitio."
+
+#: admin-core/inc/admin-menu.php:204
+msgid "Plugin Activated."
+msgstr "Plugin activado."
+
+#: admin-core/inc/admin-menu.php:188
+msgid "Plugin activation is disabled for you on this site."
+msgstr "La activación de plugins está desactivada para ti en este sitio."
+
+#: admin-core/inc/admin-menu.php:149
+msgid "Display seamless & interactive videos."
+msgstr "Muestra vídeos interactivos y sin interrupciones."
+
+#: admin-core/inc/admin-menu.php:148
+msgid "Presto Player"
+msgstr "Presto Player"
+
+#: admin-core/inc/admin-menu.php:136
+msgid "Sell your products easily on WordPress."
+msgstr "Vende tus productos fácilmente en WordPress."
+
+#: admin-core/inc/admin-menu.php:135
+msgid "SureCart"
+msgstr "SureCart"
+
+#: admin-core/inc/admin-menu.php:123
+msgid "Launch websites with AI or ready-made templates."
+msgstr "Crea sitios web con IA o plantillas ya preparadas."
+
+#: admin-core/inc/admin-menu.php:110
+msgid "Fast and customizable theme for your website."
+msgstr "Tema rápido y personalizable para tu sitio web."
+
+#: admin-core/inc/admin-menu.php:109
+msgid "Astra"
+msgstr "Astra"
 
 #: blocks-config/taxonomy-list/class-uagb-taxonomy-list.php:553
 msgid "Items"
@@ -43,19 +185,19 @@ msgstr "¡Muchas gracias por tu comentario! 😍"
 msgid "How likely are you to recommend Spectra to your friends or colleagues?"
 msgstr "¿Qué probabilidades hay de que recomiendes Spectra a tus amigos o compañeros?"
 
-#: lib/zipwp-images/classes/zipwp-images-script.php:102
+#: lib/zipwp-images/classes/zipwp-images-script.php:118
 msgid "Validating..."
 msgstr "Validando…"
 
-#: lib/zipwp-images/classes/zipwp-images-script.php:101
+#: lib/zipwp-images/classes/zipwp-images-script.php:117
 msgid "Downloading..."
 msgstr "Descargando..."
 
-#: lib/zipwp-images/classes/zipwp-images-script.php:100
+#: lib/zipwp-images/classes/zipwp-images-script.php:116
 msgid "Search - Ex: flowers"
 msgstr "Buscar - Ej.: flores"
 
-#: lib/zipwp-images/classes/zipwp-images-script.php:99
+#: lib/zipwp-images/classes/zipwp-images-script.php:115
 msgid "Search Images"
 msgstr "Buscar imágenes"
 
@@ -491,11 +633,11 @@ msgstr "Archivo de registro no encontrado."
 msgid "Migration started successfully."
 msgstr "La migración se ha iniciado correctamente."
 
-#: classes/class-uagb-admin-helper.php:492
+#: classes/class-uagb-admin-helper.php:501
 msgid "Theme"
 msgstr "Tema"
 
-#: classes/class-uagb-admin-helper.php:485
+#: classes/class-uagb-admin-helper.php:494
 msgid "Full Site Editor's Global Styles"
 msgstr "Estilos globales del editor del sitio completo"
 
@@ -7592,43 +7734,43 @@ msgstr "Características con IA"
 msgid "Dashboard"
 msgstr "Escritorio"
 
-#: admin-core/ajax/common-settings.php:1063
+#: admin-core/ajax/common-settings.php:1065
 msgid "Unable to verify authenticity."
 msgstr "No se ha podido verificar la autenticidad."
 
-#: admin-core/ajax/common-settings.php:1044
+#: admin-core/ajax/common-settings.php:1046
 msgid "Unable to save setting."
 msgstr "No es posible guardar el ajuste."
 
 #. Translators: %s is the module name.
-#: admin-core/ajax/common-settings.php:1036
+#: admin-core/ajax/common-settings.php:1038
 msgid "Unable to enable %s"
 msgstr "No se ha podido activar %s"
 
 #. Translators: %s is the module name.
-#: admin-core/ajax/common-settings.php:1026
+#: admin-core/ajax/common-settings.php:1028
 msgid "%s enabled!"
 msgstr "¡%s activado!"
 
 #. Translators: %s is the module name.
-#: admin-core/ajax/common-settings.php:1014
+#: admin-core/ajax/common-settings.php:1016
 msgid "Unable to disable %s"
 msgstr "No se ha podido desactivar %s"
 
 #. Translators: %s is the module name.
-#: admin-core/ajax/common-settings.php:1004
+#: admin-core/ajax/common-settings.php:1006
 msgid "%s disabled!"
 msgstr "¡%s desactivado!"
 
-#: admin-core/ajax/common-settings.php:986
+#: admin-core/ajax/common-settings.php:988
 msgid "Module not found!"
 msgstr "¡Módulo no encontrado!"
 
-#: admin-core/ajax/common-settings.php:849
+#: admin-core/ajax/common-settings.php:851
 msgid "Failed to refresh tokens"
 msgstr "No se han podido actualizar los token"
 
-#: admin-core/ajax/common-settings.php:847
+#: admin-core/ajax/common-settings.php:849
 msgid "Successfully refreshed tokens!"
 msgstr "¡Token actualizados correctamente!"
 
@@ -7703,16 +7845,16 @@ msgstr ""
 "Usa las clases personalizadas añadidas en los ajustes avanzados del bloque para que afecten al bloque deseado. Ejemplos:\n"
 "\t\t\t\t.mi-clase {text-align: center;} // mi-clase es un selector personalizado"
 
-#: blocks-config/image-gallery/class-spectra-image-gallery.php:1424
+#: blocks-config/image-gallery/class-spectra-image-gallery.php:1429
 msgid "Unable to load image"
 msgstr "No se puede subir la imagen"
 
-#: blocks-config/image-gallery/class-spectra-image-gallery.php:474
+#: blocks-config/image-gallery/class-spectra-image-gallery.php:477
 #: includes/blocks/image-gallery/attributes.php:136
 msgid "Load More Images"
 msgstr "Subir más imágenes"
 
-#: blocks-config/image-gallery/class-spectra-image-gallery.php:243
+#: blocks-config/image-gallery/class-spectra-image-gallery.php:246
 #: includes/blocks/image-gallery/attributes.php:74
 msgid "No Caption"
 msgstr "Sin leyenda"
@@ -8105,11 +8247,11 @@ msgid "Spectra <p>Rollback to Previous Version</p>"
 msgstr "Spectra <p>Retroceso a versión anterior</p>"
 
 #. translators: %s: html tags
-#: classes/class-uagb-loader.php:390
+#: classes/class-uagb-loader.php:432
 msgid "The %1$sSpectra%2$s plugin requires %1$sGutenberg%2$s plugin installed & activated."
 msgstr "El plugin %1$sSpectra%2$s requiere que el plugin %1$sGutenberg%2$s esté instalado y activo."
 
-#: classes/class-uagb-admin-helper.php:488
+#: classes/class-uagb-admin-helper.php:497
 msgid "Filter added through any 3rd Party Theme/Plugin."
 msgstr "Filtro añadido mediante otro tema/plugin de terceros."
 
@@ -8122,13 +8264,13 @@ msgstr "Por favor, trata de acceder de nuevo para verificar que no eres un robot
 msgid "Sorry, you cannot list resources."
 msgstr "Lo siento, no puedes listar recursos."
 
-#: admin-core/ajax/common-settings.php:164
-#: admin-core/ajax/common-settings.php:754
+#: admin-core/ajax/common-settings.php:165
+#: admin-core/ajax/common-settings.php:755
 #: classes/class-uagb-init-blocks.php:548
 msgid "Successfully saved data!"
 msgstr "¡Datos guardados correctamente!"
 
-#: admin-core/ajax/common-settings.php:180
+#: admin-core/ajax/common-settings.php:181
 #: classes/class-uagb-init-blocks.php:1432
 msgid "No post data found!"
 msgstr "¡No se han encontrado datos de la entrada!"
@@ -8138,10 +8280,12 @@ msgid "Sorry, something went wrong."
 msgstr "Lo siento, algo ha salido mal."
 
 #: admin-core/ajax/ajax-errors.php:83
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:237
 msgid "Nonce validation failed"
 msgstr "La validación del nonce falló"
 
 #: admin-core/ajax/ajax-errors.php:82
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:224
 msgid "Sorry, you are not allowed to do this operation."
 msgstr "Lo siento, no tienes permisos para realizar esta operación."
 
@@ -8360,6 +8504,11 @@ msgstr "VK"
 msgid "Rocket"
 msgstr "Cohete"
 
+#. translators: %s Product title
+#: lib/bsf-analytics/class-bsf-analytics.php:431
+msgid "Allow %s products to track non-sensitive usage tracking data."
+msgstr "Permite a los productos de %s hacer el seguimiento del rastreo de datos de uso no sensibles."
+
 #: blocks-config/uagb-controls/spectra-icons-v6-2.php:966
 msgid "List"
 msgstr "Lista"
@@ -8418,6 +8567,37 @@ msgstr "Lorem fistrum ese pedazo de torpedo diodeno. Se calle ustée al ataquerl
 #: blocks-config/faq/class-uagb-faq.php:1153
 msgid "What is FAQ?"
 msgstr "¿Qué es FAQ?"
+
+#: lib/bsf-analytics/class-bsf-analytics.php:434
+msgid " This will be applicable for all sites from the network."
+msgstr "Esto será aplicable a todos los sitios de la red."
+
+#: lib/bsf-analytics/class-bsf-analytics.php:387
+#: admin-core/assets/build/dashboard-app.js:14
+msgid "Usage Tracking"
+msgstr "Seguimiento de uso"
+
+#: lib/bsf-analytics/class-bsf-analytics.php:276
+msgid "No Thanks"
+msgstr "No, gracias"
+
+#: lib/bsf-analytics/class-bsf-analytics.php:265
+msgid "Yes! Allow it"
+msgstr "¡Sí! Lo permito"
+
+#. translators: %s usage doc link
+#: lib/bsf-analytics/class-bsf-analytics.php:255
+msgid " Know More."
+msgstr "Saber más."
+
+#: lib/bsf-analytics/class-bsf-analytics.php:231
+msgid "This will be applicable for all sites from the network."
+msgstr "Esto será aplicable a todos los sitios de la red."
+
+#. translators: %s product name
+#: lib/bsf-analytics/class-bsf-analytics.php:228
+msgid "Want to help make %1s even more awesome? Allow us to collect non-sensitive diagnostic data and usage information. "
+msgstr "¿Quieres ayudar a hacer que %1s sea aún más fantástico? Permítenos recopilar datos no sensibles de diagnóstico e información del uso. "
 
 #: includes/blocks/inline-notice/block.php:16 dist/blocks-placeholder.js:25
 msgid "Inline Notice"
@@ -8525,7 +8705,9 @@ msgid "Name"
 msgstr "Nombre"
 
 #: includes/blocks/icon-list-child/block.php:14
-#: includes/blocks/icon/block.php:16 dist/blocks-placeholder.js:21
+#: includes/blocks/icon/block.php:16
+#: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:109
+#: dist/blocks-placeholder.js:21
 msgid "Icon"
 msgstr "Icono"
 
@@ -8649,7 +8831,7 @@ msgstr "Todavía no has añadido ningún formulario de Contact Form 7."
 msgid "Select Form"
 msgstr "Selecciona un formulario"
 
-#: classes/class-uagb-helper.php:458
+#: classes/class-uagb-helper.php:478
 msgid "Full"
 msgstr "Completo"
 
@@ -8662,7 +8844,7 @@ msgstr "Cita"
 msgid "Spectra requires&nbsp;%3$sBlock Editor%4$s. You can change your editor settings to Block Editor from&nbsp;%1$shere%2$s. Plugin is currently NOT RUNNING."
 msgstr "Spectra necesita el&nbsp;%3$seditor de bloques%4$s. Puedes cambiar los ajustes de tu editor al editor de bloques desde&nbsp;%1$saquí%2$s. En este momento, el plugin NO ESTÁ EN FUNCIONAMIENTO."
 
-#: admin-core/ajax/common-settings.php:216
+#: admin-core/ajax/common-settings.php:217
 msgid "Plugin Successfully Activated"
 msgstr "Plugin activado correctamente"
 
@@ -8777,6 +8959,6 @@ msgstr "https://www.brainstormforce.com"
 msgid "Brainstorm Force"
 msgstr "Brainstorm Force"
 
-#: classes/class-uagb-loader.php:393
+#: classes/class-uagb-loader.php:435
 msgid "Install Gutenberg"
 msgstr "Instalar Gutenberg"
