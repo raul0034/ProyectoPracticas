@@ -1,0 +1,204 @@
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    :root {
+        --color-fuerte: #ffdead;
+        --color-suave: #ffffe0;
+        --color-detalles: #8b4513; 
+    }
+
+  
+
+    .contenedor-formulario {
+        font-family: 'Roboto';
+        background-color: var(--color-fuerte);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 500px;
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .contenedor-formulario.visible {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .titulo {
+        border-bottom: 4px solid var(--color-detalles);
+    }
+
+    h2 {
+        font-family: 'Roboto';
+        text-align: center;
+        color: var(--color-detalles);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        margin-top: 0.25rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .condiciones {
+        background-color: var(--color-suave);
+        padding: 1rem;
+        border-radius: 6px;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .condiciones input {
+        margin-right: 0.5rem;
+    }
+
+    button[type="submit"] {
+        margin-top: 1.5rem;
+        padding: 0.75rem;
+        background-color: var(--color-detalles);
+        color: var(--color-suave);
+        border: none;
+        border-radius: 4px;
+        transition: 0.3s;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    button[type="submit"]:hover {
+        background-color: var(--color-suave);
+        color: var(--color-detalles); 
+    }
+</style>
+<body>
+<div class="contenedor-formulario" id="formulario">
+    <div class="titulo">
+        <h2>INFÓRMATE ACERCA DE LA DISPONIBILIDAD DE NUESTROS SERVICIOS EN TU ZONA</h2>
+    </div>    
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+
+        <label for="comunidad">Comunidad Autónoma:</label>
+        <select id="comunidad" name="comunidad" required>
+            <option value="">-- Selecciona una comunidad --</option>
+            <option value="andalucia">Andalucía</option>
+            <option value="aragon">Aragón</option>
+            <option value="asturias">Asturias</option>
+            <option value="baleares">Baleares</option>
+            <option value="canarias">Canarias</option>
+            <option value="cantabria">Cantabria</option>
+            <option value="castillalamancha">Castilla-La Mancha</option>
+            <option value="castillayleon">Castilla y León</option>
+            <option value="catalunya">Cataluña</option>
+            <option value="ceuta">Ceuta</option>
+            <option value="extremadura">Extremadura</option>
+            <option value="galicia">Galicia</option>
+            <option value="larioja">La Rioja</option>
+            <option value="madrid">Madrid</option>
+            <option value="melilla">Melilla</option>
+            <option value="murcia">Murcia</option>
+            <option value="navarra">Navarra</option>
+            <option value="paisvasco">País Vasco</option>
+            <option value="valencia">Valencia</option>
+        </select>
+
+        <label for="provincia" id="provincia-label" style="display:none;">Provincia:</label>
+        <select id="provincia" name="provincia" style="display:none;"></select>
+
+        <div class="condiciones">
+            <label>
+                <input type="checkbox" name="privacidad" required>
+                <strong>He leído y acepto</strong> la política de privacidad y protección de datos*
+            </label><br>
+            <label>
+                <input type="checkbox" name="promocion">
+                <strong>He leído y acepto</strong> el uso de mi correo para enviar contenido promocional
+            </label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<script>
+    const formulario = document.getElementById('formulario');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                formulario.classList.add('visible');
+            } else {
+                formulario.classList.remove('visible');
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(formulario);
+
+    const comunidadSelect = document.getElementById("comunidad");
+    const provinciaSelect = document.getElementById("provincia");
+    const provinciaLabel = document.getElementById("provincia-label");
+
+    const provinciasPorComunidad = {
+        andalucia: ["Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"],
+        aragon: ["Huesca", "Teruel", "Zaragoza"],
+        asturias: ["Asturias"],
+        baleares: ["Baleares"],
+        canarias: ["Las Palmas", "Santa Cruz de Tenerife"],
+        cantabria: ["Cantabria"],
+        castillalamancha: ["Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo"],
+        castillayleon: ["Ávila", "Burgos", "León", "Palencia", "Salamanca", "Segovia", "Soria", "Valladolid", "Zamora"],
+        catalunya: ["Barcelona", "Girona", "Lleida", "Tarragona"],
+        ceuta: ["Ceuta"],
+        extremadura: ["Badajoz", "Cáceres"],
+        galicia: ["A Coruña", "Lugo", "Ourense", "Pontevedra"],
+        larioja: ["La Rioja"],
+        madrid: ["Madrid"],
+        melilla: ["Melilla"],
+        murcia: ["Murcia"],
+        navarra: ["Navarra"],
+        paisvasco: ["Álava", "Guipúzcoa", "Vizcaya"],
+        valencia: ["Alicante", "Castellón", "Valencia"]
+    };
+
+    comunidadSelect.addEventListener("change", function() {
+        const comunidad = comunidadSelect.value;
+        provinciaSelect.innerHTML = "";
+        if (comunidad && provinciasPorComunidad[comunidad]) {
+            provinciaLabel.style.display = "block";
+            provinciaSelect.style.display = "block";
+            provinciasPorComunidad[comunidad].forEach(provincia => {
+                const option = document.createElement("option");
+                option.value = provincia;
+                option.textContent = provincia;
+                provinciaSelect.appendChild(option);
+            });
+        } else {
+            provinciaLabel.style.display = "none";
+            provinciaSelect.style.display = "none";
+        }
+    });
+</script>
+</body>
