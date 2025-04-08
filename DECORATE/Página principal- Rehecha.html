@@ -18,77 +18,79 @@
   
   <!-- wp:html -->
   <title>Decorate</title>
-    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-  
-      html, body {
-        width: 100%;
-      }
-  
-      .container {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 16 / 5; 
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-  
-      video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center 80%; 
-        z-index: -1;
-        filter: brightness(1.2) saturate(0.6);
-      }
-  
-      .capa {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(135, 131, 131, 0.4);
-        mix-blend-mode: overlay;
-        z-index: 0;
-      }
-  
-      h1.titulo-personalizado {
-        font-family: 'Imperial Script', cursive;
-        font-size: 25rem;
-        color: #ffdead;
-        margin-right: 50px;
-        z-index: 2;
-        text-align: center;
-        text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
-      }
-  
-      .video-wrapper {
-        video-wrapper {
-        background-color: rgb(139, 69, 19, 0.6);
-        z-index: 2;
-      }
-    </style>
-      <div class="container">
-          <div class="video-wrapper">
-            <video autoplay muted loop playsinline>
-              <source src="http://localhost/wordpress/wp-content/uploads/2025/04/DECORATE.mp4">
-            </video>
+      <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        html, body {
+          width: 100%;
+        }
+    
+        .container {
+          position: relative;
+          width: 100%;
+          aspect-ratio: 16 / 5; 
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 80%; 
+          z-index: -1;
+          filter: brightness(1.2) saturate(0.6);
+        }
+    
+        .capa {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(135, 131, 131, 0.4);
+          mix-blend-mode: overlay;
+          z-index: 0;
+        }
+    
+        h1.titulo-personalizado {
+          font-family: 'Imperial Script', cursive;
+          font-size: 25rem;
+          color: #ffdead;
+          margin-right: 50px;
+          translateY: 30px;
+          margin-top: -20px;
+          z-index: 2;
+          text-align: center;
+          text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+        }
+    
+        .video-wrapper {
+          video-wrapper {
+          background-color: rgb(139, 69, 19, 0.6);
+          z-index: 2;
+        }
+      </style>
+        <div class="container">
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline>
+                <source src="http://localhost/wordpress/wp-content/uploads/2025/04/DECORATE.mp4">
+              </video>
+            </div>
+            <div class="capa"></div>
+            <h1 class="titulo-personalizado">Decórate</h1>
           </div>
-          <div class="capa"></div>
-          <h1 class="titulo-personalizado">Decorate</h1>
-        </div>
-    </div>
+      </div>
   <!-- /wp:html -->
   
   <!-- wp:spacer {"height":"50px"} -->
@@ -123,114 +125,114 @@
   
   <!-- wp:paragraph -->
   <p><style>
-          * {<br />
-              margin: 0;<br />
-              padding: 0;<br />
-              box-sizing: border-box;<br />
-          }</p>
-  <p>        .container {<br />
-              display: flex;<br />
-              height: 60vh;<br />
-              width: 100%;<br />
-              max-width: 100%;<br />
-          }</p>
-  <p>        .image {<br />
-              flex: 1;<br />
-              background: url('https://www.elmueble.com/medio/2018/09/27/salon-con-banco-unapared-beige-y-otra-marron00474461-o_330d8f1f_1819x2000.jpg') center/cover no-repeat;<br />
-              height: 100%;<br />
-          }   </p>
-  <p>        .text {<br />
-              flex: 1;<br />
-              background-color: #c0c0c0;<br />
-              color: black;<br />
-              display: flex;<br />
-              align-items: center;<br />
-              justify-content: center;<br />
-              text-align: center;<br />
-              padding: 30px;<br />
-              font-size: 24px;<br />
-              flex-direction: column;<br />
-              margin: 0px;<br />
-          }<br />
-          h2 {<br />
-              margin-bottom: 50px;<br />
-              padding-bottom: 10px;<br />
-              }</p>
-  <p>        @media (max-width: 768px) {<br />
-              .container {<br />
-                  flex-direction: column;<br />
-                  height: auto;<br />
-              }</p>
-  <p>            .image, .text {<br />
-                  width: 100%;<br />
-                  height: 50vh;<br />
-              }<br />
-          }<br />
-      </style></p>
+            * {<br />
+                margin: 0;<br />
+                padding: 0;<br />
+                box-sizing: border-box;<br />
+            }</p>
+    <p>        .container {<br />
+                display: flex;<br />
+                height: 60vh;<br />
+                width: 100%;<br />
+                max-width: 100%;<br />
+            }</p>
+    <p>        .image {<br />
+                flex: 1;<br />
+                background: url('https://www.elmueble.com/medio/2018/09/27/salon-con-banco-unapared-beige-y-otra-marron00474461-o_330d8f1f_1819x2000.jpg') center/cover no-repeat;<br />
+                height: 100%;<br />
+            }   </p>
+    <p>        .text {<br />
+                flex: 1;<br />
+                background-color: #c0c0c0;<br />
+                color: black;<br />
+                display: flex;<br />
+                align-items: center;<br />
+                justify-content: center;<br />
+                text-align: center;<br />
+                padding: 30px;<br />
+                font-size: 24px;<br />
+                flex-direction: column;<br />
+                margin: 0px;<br />
+            }<br />
+            h2 {<br />
+                margin-bottom: 50px;<br />
+                padding-bottom: 10px;<br />
+                }</p>
+    <p>        @media (max-width: 768px) {<br />
+                .container {<br />
+                    flex-direction: column;<br />
+                    height: auto;<br />
+                }</p>
+    <p>            .image, .text {<br />
+                    width: 100%;<br />
+                    height: 50vh;<br />
+                }<br />
+            }<br />
+        </style></p>
   <!-- /wp:paragraph -->
   
   <!-- wp:html -->
   <title>Bloque con Imagen y Texto</title>
-      <style>
-          * {
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;   
-          }
-  
-          .container {
-              display: flex;
-              height: 60vh;
-              width: 100%;
-              max-width: 100%;
-          }
-  
-          .image {
-              flex: 1;
-              background: url('https://www.elmueble.com/medio/2018/09/27/salon-con-banco-unapared-beige-y-otra-marron00474461-o_330d8f1f_1819x2000.jpg') center/cover no-repeat;
-              height: 100%;
-          }   
-  
-          .text {
-              flex: 1;
-              background-color: #ffdead;
-              color: black;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-              padding: 30px;
-              font-size: 24px;
-              flex-direction: column;
-              margin: 0px;
-              height: 100%;
-          }
-          h2 {
-              margin-bottom: 50px;
-              padding-bottom: 10px;
-              }
-  
-          @media (max-width: 768px) {
-              .container {
-                  flex-direction: column;
-                  height: auto;
-              }
-  
-              .image, .text {
-                  width: 100%;
-                  height: 100%;
-              }
-          }
-      </style>
-  <div class="container">
-      <div class="image"></div>
-      <div class="text">
-          <h2>Siéntete en casa</h2>
-          <hr>
-          <p>Porque sabemos lo importante que es tu casa para ti.<br>
-          Queremos que esté a tu gusto.</p>
-      </div>
-  </div>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;   
+            }
+    
+            .container {
+                display: flex;
+                height: 60vh;
+                width: 100%;
+                max-width: 100%;
+            }
+    
+            .image {
+                flex: 1;
+                background: url('https://www.elmueble.com/medio/2018/09/27/salon-con-banco-unapared-beige-y-otra-marron00474461-o_330d8f1f_1819x2000.jpg') center/cover no-repeat;
+                height: 100%;
+            }   
+    
+            .text {
+                flex: 1;
+                background-color: #ffdead;
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 30px;
+                font-size: 24px;
+                flex-direction: column;
+                margin: 0px;
+                height: 100%;
+            }
+            h2 {
+                margin-bottom: 50px;
+                padding-bottom: 10px;
+                }
+    
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                    height: auto;
+                }
+    
+                .image, .text {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        </style>
+    <div class="container">
+        <div class="image"></div>
+        <div class="text">
+            <h2>Siéntete en casa</h2>
+            <hr>
+            <p>Porque sabemos lo importante que es tu casa para ti.<br>
+            Queremos que esté a tu gusto.</p>
+        </div>
+    </div>
   <!-- /wp:html -->
   
   <!-- wp:spacer {"height":"28px"} -->
@@ -251,172 +253,172 @@
   
   <!-- wp:html -->
   <div class="contenedor-tarjetas-4columnas">
-    <div class="tarjeta-estilo">
-      <div class="tarjeta-imagen">
-        <img src="http://www.stevewilliamskitchens.co.uk/wp-content/uploads/2016/07/top-10-living-room-furniture-design-trends-a-modern-sofa.jpg" alt="Tarjeta 1" class="spectra-image"/>
-      </div>
-      <div class="tarjeta-contenido">
-        <h3>Para tu comodidad</h3>
-        <p>Gran variedad de sofas</p>
-       
-      </div>
-    </div>
-    <div class="tarjeta-estilo">
-      <div class="tarjeta-imagen">
-        <img src="https://www.factorydelmuebleutrera.com/product_images/main_image/8632-ESCRITORIO.jpg" alt="Tarjeta 2" class="spectra-image"/>
-      </div>
-      <div class="tarjeta-contenido">
-        <h3>Trabaja desde casa</h3>
-        <p>Tu despacho a tu gusto</p>
-     
-      </div>
-    </div>
-    <div class="tarjeta-estilo">
-      <div class="tarjeta-imagen">
-        <img src="https://nexdom.racc.es/wp-content/uploads/2020/08/decoracion-jardines-modernos-4.jpg" alt="Tarjeta 3" class="spectra-image"/>
-      </div>
-      <div class="tarjeta-contenido">
-        <h3>Para tu ocio</h3>
-        <p>Tu jardin o terraza perfectos</p>
-     
-      </div>
-    </div>
       <div class="tarjeta-estilo">
-      <div class="tarjeta-imagen">
-        <img src="http://construyehogar.com/wp-content/uploads/2014/06/Dormitorio-moderno-con-piso-de-madera-Pavel-Vetrov.jpg"/>
+        <div class="tarjeta-imagen">
+          <img src="http://www.stevewilliamskitchens.co.uk/wp-content/uploads/2016/07/top-10-living-room-furniture-design-trends-a-modern-sofa.jpg" alt="Tarjeta 1" class="spectra-image"/>
+        </div>
+        <div class="tarjeta-contenido">
+          <h3>Para tu comodidad</h3>
+          <p>Gran variedad de sofas</p>
+         
+        </div>
       </div>
-      <div class="tarjeta-contenido">
-        <h3>Para tu descanso</h3>
-        <p>Habitaciones completas</p>
-     
+      <div class="tarjeta-estilo">
+        <div class="tarjeta-imagen">
+          <img src="https://www.factorydelmuebleutrera.com/product_images/main_image/8632-ESCRITORIO.jpg" alt="Tarjeta 2" class="spectra-image"/>
+        </div>
+        <div class="tarjeta-contenido">
+          <h3>Trabaja desde casa</h3>
+          <p>Tu despacho a tu gusto</p>
+       
+        </div>
+      </div>
+      <div class="tarjeta-estilo">
+        <div class="tarjeta-imagen">
+          <img src="https://nexdom.racc.es/wp-content/uploads/2020/08/decoracion-jardines-modernos-4.jpg" alt="Tarjeta 3" class="spectra-image"/>
+        </div>
+        <div class="tarjeta-contenido">
+          <h3>Para tu ocio</h3>
+          <p>Tu jardin o terraza perfectos</p>
+       
+        </div>
+      </div>
+        <div class="tarjeta-estilo">
+        <div class="tarjeta-imagen">
+          <img src="http://construyehogar.com/wp-content/uploads/2014/06/Dormitorio-moderno-con-piso-de-madera-Pavel-Vetrov.jpg"/>
+        </div>
+        <div class="tarjeta-contenido">
+          <h3>Para tu descanso</h3>
+          <p>Habitaciones completas</p>
+       
+        </div>
       </div>
     </div>
-  </div>
-  <style>
-  .contenedor-tarjetas-4columnas {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 30px;
-    margin: 0 auto;
-    overflow-x: auto;
-    padding: 20px;
-    width: 100%;
-    max-width: 100%;
-  }
-  .tarjeta-estilo {
-    background: var(--color-secundario, #ffdead);
-    border-radius: 0px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    width: calc(25% - 20px);
-    max-width: calc(25% - 20px);
-    min-width: 250px;
-  }
-  .tarjeta-estilo:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-  }
-  .tarjeta-imagen {
-    height: 250px;
-    overflow: hidden;
-  }
-  .tarjeta-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  .tarjeta-estilo:hover .tarjeta-imagen img {
-    transform: scale(1.05);
-  }
-  .tarjeta-contenido {
-    padding: 15px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .tarjeta-contenido h3 {
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-    color: #000000;
-  }
-  .tarjeta-contenido p {
-    color: #000000;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    flex-grow: 1;
-  }
-  </style>
+    <style>
+    .contenedor-tarjetas-4columnas {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 30px;
+      margin: 0 auto;
+      overflow-x: auto;
+      padding: 20px;
+      width: 100%;
+      max-width: 100%;
+    }
+    .tarjeta-estilo {
+      background: var(--color-secundario, #ffdead);
+      border-radius: 0px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+      width: calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      min-width: 250px;
+    }
+    .tarjeta-estilo:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .tarjeta-imagen {
+      height: 250px;
+      overflow: hidden;
+    }
+    .tarjeta-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .tarjeta-estilo:hover .tarjeta-imagen img {
+      transform: scale(1.05);
+    }
+    .tarjeta-contenido {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .tarjeta-contenido h3 {
+      font-size: 1.8rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+    .tarjeta-contenido p {
+      color: #000000;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+    </style>
   <!-- /wp:html -->
   
   <!-- wp:paragraph -->
   <p><style>
-    .contenedor-tarjetas-4columnas {<br />
-      display: flex;<br />
-      justify-content: center;<br />
-      flex-wrap: nowrap;<br />
-      gap: 30px;<br />
-      margin: 0 auto;<br />
-      overflow-x: auto;<br />
-      padding: 20px;<br />
-      width: 100%;<br />
-      max-width: 100%;<br />
-    }<br />
-    .tarjeta-estilo {<br />
-      background: var(--color-secundario, #c0c0c0);<br />
-      border-radius: 0px;<br />
-      overflow: hidden;<br />
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);<br />
-      transition: transform 0.3s ease, box-shadow 0.3s ease;<br />
-      display: flex;<br />
-      flex-direction: column;<br />
-      height: 70%;<br />
-      width: calc(25% - 20px);<br />
-      max-width: calc(25% - 20px);<br />
-      min-width: 250px;<br />
-    }<br />
-    .tarjeta-estilo:hover {<br />
-      transform: translateY(-10px);<br />
-      box-shadow: 0 15px 30px rgba(0,0,0,0.15);<br />
-    }<br />
-    .tarjeta-imagen {<br />
-      height: 250px;<br />
-      overflow: hidden;<br />
-    }<br />
-    .tarjeta-imagen img {<br />
-      width: 100%;<br />
-      height: 100%;<br />
-      object-fit: cover;<br />
-      transition: transform 0.5s ease;<br />
-    }<br />
-    .tarjeta-estilo:hover .tarjeta-imagen img {<br />
-      transform: scale(1.05);<br />
-    }<br />
-    .tarjeta-contenido {<br />
-      padding: 15px;<br />
-      flex-grow: 1;<br />
-      display: flex;<br />
-      flex-direction: column;<br />
-    }<br />
-    .tarjeta-contenido h3 {<br />
-      font-size: 1.8rem;<br />
-      letter-spacing: 0.5px;<br />
-      margin-bottom: 10px;<br />
-      color: #000000;<br />
-    }<br />
-    .tarjeta-contenido p {<br />
-      color: #000000;<br />
-      margin-bottom: 20px;<br />
-      line-height: 1.6;<br />
-      flex-grow: 1;<br />
-    }<br />
-  </style></p>
+      .contenedor-tarjetas-4columnas {<br />
+        display: flex;<br />
+        justify-content: center;<br />
+        flex-wrap: nowrap;<br />
+        gap: 30px;<br />
+        margin: 0 auto;<br />
+        overflow-x: auto;<br />
+        padding: 20px;<br />
+        width: 100%;<br />
+        max-width: 100%;<br />
+      }<br />
+      .tarjeta-estilo {<br />
+        background: var(--color-secundario, #c0c0c0);<br />
+        border-radius: 0px;<br />
+        overflow: hidden;<br />
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);<br />
+        transition: transform 0.3s ease, box-shadow 0.3s ease;<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+        height: 70%;<br />
+        width: calc(25% - 20px);<br />
+        max-width: calc(25% - 20px);<br />
+        min-width: 250px;<br />
+      }<br />
+      .tarjeta-estilo:hover {<br />
+        transform: translateY(-10px);<br />
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);<br />
+      }<br />
+      .tarjeta-imagen {<br />
+        height: 250px;<br />
+        overflow: hidden;<br />
+      }<br />
+      .tarjeta-imagen img {<br />
+        width: 100%;<br />
+        height: 100%;<br />
+        object-fit: cover;<br />
+        transition: transform 0.5s ease;<br />
+      }<br />
+      .tarjeta-estilo:hover .tarjeta-imagen img {<br />
+        transform: scale(1.05);<br />
+      }<br />
+      .tarjeta-contenido {<br />
+        padding: 15px;<br />
+        flex-grow: 1;<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+      }<br />
+      .tarjeta-contenido h3 {<br />
+        font-size: 1.8rem;<br />
+        letter-spacing: 0.5px;<br />
+        margin-bottom: 10px;<br />
+        color: #000000;<br />
+      }<br />
+      .tarjeta-contenido p {<br />
+        color: #000000;<br />
+        margin-bottom: 20px;<br />
+        line-height: 1.6;<br />
+        flex-grow: 1;<br />
+      }<br />
+    </style></p>
   <!-- /wp:paragraph -->
   
   <!-- wp:spacer {"height":"15px"} -->
@@ -457,82 +459,82 @@
   
   <!-- wp:html -->
   <section class="youtube">
-    <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-      <div class="wp-block-embed__wrapper">
-        https://www.youtube.com/watch?v=zOdkUgNxLqQ
-      </div>
-    </figure>
-  </section>
-  
-  <style> 
-    .youtube {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      justify-items: center;
-      scale: 1.28;
-    }
+      <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+        <div class="wp-block-embed__wrapper">
+          https://www.youtube.com/watch?v=zOdkUgNxLqQ
+        </div>
+      </figure>
+    </section>
+    
+    <style> 
+      .youtube {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-items: center;
+        scale: 1.28;
+      }
   <!-- /wp:html -->
   
   <!-- wp:paragraph -->
   <p><style>
-      .contenedor-formulario {<br />
-          background-image: url("http://localhost/wordpress/wp-content/uploads/2025/04/Copy-of-Animation-1743670051925-1.gif");<br />
-          background-color: #c0c0c0;<br />
-          padding: 30px;<br />
-          border-radius: 10px;<br />
-          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);<br />
-          max-width: 400px;<br />
-          width: 100%;<br />
-          min-height: 400px;<br />
-          background-repeat: no-repeat;<br />
-          background-size: contain;<br />
-          background-position: center;<br />
-          display: flex;<br />
-          flex-direction: column;<br />
-          justify-content: center;<br />
-      }</p>
-  <p>    .campo {<br />
-          display: flex;<br />
-          flex-direction: column;<br />
-          margin-bottom: 15px;<br />
-      }</p>
-  <p>    label {<br />
-          font-weight: bold;<br />
-          margin-bottom: 5px;<br />
-          color: #333;<br />
-      }<br />
-      input, textarea, button {<br />
-          padding: 10px;<br />
-          border: 1px solid #ccc;<br />
-          border-radius: 5px;<br />
-          font-size: 16px;<br />
-          width: 100%;<br />
-          box-sizing: border-box;<br />
-      }<br />
-      button {<br />
-          background: #808080;<br />
-          color: black;<br />
-          cursor: pointer;<br />
-          transition: 0.3s;<br />
-          border: none;<br />
-          font-weight: bold;<br />
-      }<br />
-      button:hover {<br />
-          background: #ffffff;<br />
-          color: #333;<br />
-      }</p>
-  <p>    .campo button {<br />
-          margin-top: 15px;<br />
-      }</p>
-  <p>    @media (max-width: 768px) {<br />
-          .contenedor-formulario {<br />
-              max-width: 90%;<br />
-          }</p>
-  <p>        input, textarea, button {<br />
-              font-size: 14px;<br />
-          }<br />
-      }<br />
-  </style></p>
+        .contenedor-formulario {<br />
+            background-image: url("http://localhost/wordpress/wp-content/uploads/2025/04/Copy-of-Animation-1743670051925-1.gif");<br />
+            background-color: #c0c0c0;<br />
+            padding: 30px;<br />
+            border-radius: 10px;<br />
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);<br />
+            max-width: 400px;<br />
+            width: 100%;<br />
+            min-height: 400px;<br />
+            background-repeat: no-repeat;<br />
+            background-size: contain;<br />
+            background-position: center;<br />
+            display: flex;<br />
+            flex-direction: column;<br />
+            justify-content: center;<br />
+        }</p>
+    <p>    .campo {<br />
+            display: flex;<br />
+            flex-direction: column;<br />
+            margin-bottom: 15px;<br />
+        }</p>
+    <p>    label {<br />
+            font-weight: bold;<br />
+            margin-bottom: 5px;<br />
+            color: #333;<br />
+        }<br />
+        input, textarea, button {<br />
+            padding: 10px;<br />
+            border: 1px solid #ccc;<br />
+            border-radius: 5px;<br />
+            font-size: 16px;<br />
+            width: 100%;<br />
+            box-sizing: border-box;<br />
+        }<br />
+        button {<br />
+            background: #808080;<br />
+            color: black;<br />
+            cursor: pointer;<br />
+            transition: 0.3s;<br />
+            border: none;<br />
+            font-weight: bold;<br />
+        }<br />
+        button:hover {<br />
+            background: #ffffff;<br />
+            color: #333;<br />
+        }</p>
+    <p>    .campo button {<br />
+            margin-top: 15px;<br />
+        }</p>
+    <p>    @media (max-width: 768px) {<br />
+            .contenedor-formulario {<br />
+                max-width: 90%;<br />
+            }</p>
+    <p>        input, textarea, button {<br />
+                font-size: 14px;<br />
+            }<br />
+        }<br />
+    </style></p>
   <!-- /wp:paragraph -->
   
   <!-- wp:spacer {"height":"50px"} -->
@@ -585,25 +587,25 @@
   
   <!-- wp:html -->
   <head>
-      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-     <body>
-         <style>
-            font-family:'Dancing Script';
-            font-sice: 16px;
-            color: black;
-         </style>
-      </body>
-  </head>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+       <body>
+           <style>
+              font-family:'Dancing Script';
+              font-sice: 16px;
+              color: black;
+           </style>
+        </body>
+    </head>
   <!-- /wp:html -->
   
   <!-- wp:html -->
   <body>
-      <style>
-      body{
-          background-color: #ffffe0;
-      }
-      </style>
-  </body>
+        <style>
+        body{
+            background-color: #ffffe0;
+        }
+        </style>
+    </body>
   <!-- /wp:html -->
   
   <!-- wp:paragraph -->
