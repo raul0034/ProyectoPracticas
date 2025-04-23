@@ -2,9 +2,17 @@
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
-  <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+  <?php
+    if ( have_posts() ) {
+      while ( have_posts() ) {
+        the_post();
+        the_content();
+      }
+    }
+  ?>
+  <?php wp_footer(); ?>
 </body>
 </html>
