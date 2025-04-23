@@ -1,0 +1,379 @@
+<!-- wp:html -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #5ea37b;
+    --color-secundario: #4d4d4d;
+    --color-terciario: #d4d4d4;
+    --color-caracter: #ea3c7e;
+    --color-texto: #ffffff;
+    --color-texto-alt: #4d4d4d;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    background-image: url('');
+    background-color: var(--color-secundario);
+    background-position: center;
+    background-size: mosaic;
+    background-scale: 0.5;
+    background-attachment: fixed;
+}
+
+.barra-superior {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    max-width: 100vw;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    justify-items: center;
+    z-index: 1000;
+    margin: 0;
+}
+
+.encabezado-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px;
+    width: 100vw;
+    margin-top: 0px;
+    padding: 5px;
+    background-color: var(--color-primario);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.botones-izquierda {
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+    flex: 1;
+    justify-content: right;
+}
+
+.botones-derecha {
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+    flex: 1;
+    justify-content: left;
+}
+
+.boton-header {
+    padding: 10px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.boton-header:hover {
+    color: var(--color-secundario);
+    transform: translateY(-1px);
+
+}
+
+.icono-boton img {
+    padding: 10px;
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.icono-boton:hover img {
+    transform: scale(1.0);
+}
+
+.cuerpo {
+    margin-top: -20px;
+    background-image: url('https://crunch.com/wp-content/uploads/2023/01/CR011SLTH_January_1.30_Hub-Images_Womens-Fitness_1.26.23.jpg');
+    background-position-x: center;
+    background-position-y: -25vh;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.cuerpo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(94, 163, 123, 0.8);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+.contenido-cuerpo {
+    position: relative;
+    margin-bottom: 300px;
+    color: var(--color-texto);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contenido-cuerpo h1 {
+    font-size: 90px;
+    font-family: 'Roboto';
+    margin-top: 300px;
+    color: var(--color-texto);
+}
+
+.contenedor-imagen-texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    max-width: 800px;
+    height: 1000px;
+    margin: 200px auto 100px;
+    gap: 40px;
+    padding: 25px 50px;
+    background: linear-gradient(180deg, var(--color-secundario)25%, #585858, var(--color-secundario)75%);
+    border-radius: 50px;
+}
+
+.imagen-izquierda {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    height: auto;
+    max-height: 400px;
+    aspect-ratio: 16/18;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-izquierda img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.texto-contenido-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    translate: 0 -310px;
+}
+
+.texto-contenido-derecha h2 {
+    color: #89c4a2;
+    font-size: 40px;
+    text-align: left;
+    text-justify: auto;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.texto-contenido-derecha p {
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--color-terciario);
+    margin-bottom: 1.2rem;
+}
+
+.texto-contenido-subscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -650px;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-contenido-subscripcion h3{
+    color: #89c4a2;
+    font-size: 30px;
+    text-align: left;
+    text-justify: auto;
+    margin-bottom: 0px;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.subscripcion {
+    padding: 12px 24px;
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscripcion:hover {
+    background-color: var(--color-caracter);
+    color: var(--color-terciario);
+    transform: translateY(-3px);
+}
+
+.pie-de-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    margin-top: 300px;
+    margin-bottom: 0;
+    background: linear-gradient(0deg, var(--color-primario)25%, #6a9e80, var(--color-primario)75%);
+    height: 300px;
+    width: 100%;
+    max-width: 100vw;
+    border-radius:0px;
+}
+
+.container-redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.redes-sociales {
+    padding: 12px 24px;
+    color: var(--color-texto-alt);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    background: none;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales:hover {
+    background-color: var();
+    color: var(--color-terciario);
+    transform: translateY(-1px);
+}
+
+.texto-pie {
+    padding-top: 200px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: var(--color-texto-alt);
+}
+
+.negrita {
+    font-weight: bold;
+    color: var(--color-caracter);
+</style>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo F1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="barra-superior">
+        <div class="encabezado-superior">
+            <div class="botones-izquierda">
+                <div class="menu-desplegable">
+                    <button class="boton-header">INICIO</button>
+                </div>
+                <div class="menu-desplegable">
+                    <button class="boton-header">NUESTROS PLANES</button>
+                </div>
+            </div>        
+            <div class="logo-centro">
+                <a href="#" class="icono-boton">
+                    <img src="http://localhost/wordpress/wp-content/uploads/2025/04/logo-2.png" alt="logo F1">
+                </a>
+            </div>
+            <div class="botones-derecha">
+                <div class="menu-desplegable">
+                    <button class="boton-header">QUIENES SOMOS</button>
+                </div>
+                <div class="menu-desplegable">    
+                    <button class="boton-header">CONTACTO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cuerpo">
+        <div class="contenido-cuerpo">
+            <h1>Únete a nuestra comunidad fitness</h1>
+        </div>
+    </section>
+    
+    <section class="contenido-principal">
+        <div class="contenedor-imagen-texto">
+            <div class="imagen-izquierda">
+                <img src="https://img.freepik.com/fotos-premium/chica-sexy-determinada-gimnasio-lista-comenzar-leccion-fitness_207634-3088.jpg" alt="Carlos-Sainz">
+            </div>
+            <div class="texto-contenido-derecha">
+                <h2>¿POR QUÉ ESPERAR CUANDO PUEDE SER AHORA?</h2>
+                <p>Con <span class="negrita">Personal Trainer</span>, dispondrás a golpe de clic de las mejores dietas y rutinas de ejercicios, gracias a los increíbles entrenadores que ponemos a tu disposición. Encuentra el plan que se adecúe a tus objetivos gracias a nuestro asesoramiento.</p>
+                <p>Explora nuestro sitio y descubre una nueva manera de disfrutar de cuidar <span class="negrita">tu mente y tu cuerpo</span>.</p>
+            </div>
+        </div>
+        <div class="texto-contenido-subscripcion">
+            <h3>ÚNETE YA A NUESTRA COMUNIDAD FITNESS</h3>
+            <a href="#" class="subscripcion">EMPIEZA TU CAMBIO FÍSICO</a>
+        </div>
+    </section>
+
+    <section class="pie-de-pagina">
+        <div class="container-redes-sociales">
+            <a href="#" class="redes-sociales">Instagram</a>
+            <a href="#" class="redes-sociales">Facebook</a>
+            <a href="#" class="redes-sociales">X</a>
+            <a href="#" class="redes-sociales">Tik Tok</a>
+            <a href="#" class="redes-sociales">YouTube</a>
+        </div>
+        <div class="texto-pie">
+            <p>Esta página ha sido realizada por Pedro de la Rúa Lima.</p>
+        </div>
+    </section>
+</body>
+</html>
+<!-- /wp:html -->
+
+
+
+
