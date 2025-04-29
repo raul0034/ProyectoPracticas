@@ -1,0 +1,102 @@
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<link href="<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<div class="bloque-servicios">
+  <div class="contenedor-interno">
+    <div class="contenido-imagen">
+      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Entrenador-personal-online-768x945.sin_.fondo-removebg-preview.png" alt="Nuestros servicios" />
+    </div>
+    <div class="contenido-texto">
+      <div class="frase-fondo">ponte en forma</div>
+      <h3>Te ayudamos a cuidarte</h3>
+      <h2><b>Nuestros servicios</b></h2>
+      <p>Ayudamos a todas las mujeres de cualquier edad a mejorar su salud y sus hábitos mediante planes 100% personalizados de dietas y entrenos.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .bloque-servicios {
+    position: relative;
+    padding: 100px 30px;
+    color: #4b0082;
+    font-family: 'Roboto';
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #e0ffff;
+    text-align: center;
+  }
+
+  .bloque-servicios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0ffff;
+    z-index: 1;
+  }
+
+  .contenedor-interno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap; 
+  }
+
+  .contenido-texto {
+    max-width: 600px;
+    text-align: left;
+    padding-right: 40px;
+  }
+
+  .contenido-imagen {
+    margin-right: 40px;
+    background-color: #e0ffff;
+  }
+  
+  .contenido-imagen img {
+    max-width: 370px;
+    width: 100%;
+    border-radius: 20px;
+    margin-rigth: 20px;
+  }
+
+  .bloque-servicios h2 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    color: black;
+  }
+
+  .bloque-servicios h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #2ebdc2;
+    text-align: center;
+  }
+
+  .bloque-servicios p {
+    font-size: 20px;
+    margin: 0 auto;
+    color: black;
+  }
+
+  .frase-fondo {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    font-weight: bold;
+    font-family: 'Merienda', cursive;
+    color: rgba(100, 100, 100, 0.5);
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+</style>
