@@ -1,6 +1,6 @@
 <!-- wp:html -->
 <style>
-    body {
+  body {
   background-color: #e0ffff;
 }
   :root {
@@ -452,6 +452,104 @@
     }
     </style>
     <!-- /wp:html -->
-  
-  
-  
+<!-- wp:spacer {"height":"34px"} -->
+<div style="height:34px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- wp:html -->
+<style>
+  .comparison-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin: 40px auto;
+  }
+
+  .comparison-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .after-image {
+    clip-path: inset(0 50% 0 0);
+    z-index: 2;
+  }
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-1.5px);
+    width: 8px;
+    height: 100%;
+    background-color: #2ebdc2;
+    z-index: 3;
+    cursor: grab;
+  }
+
+  .slider-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #2ebdc2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    user-select: none;
+    pointer-events: none;
+  }
+</style>
+
+<div class="comparison-container" id="container">
+  <img src="https://previews.123rf.com/images/pokanyaluck/pokanyaluck2301/pokanyaluck230100070/196904036-medidas-corporales-de-hombres-gordos-tipo-con-aumento-de-la-deposici%C3%B3n-de-grasa-y-plenitud-vistas.jpg" alt="Antes" class="before-image">
+  <img src="https://previews.123rf.com/images/pjphotography/pjphotography1804/pjphotography180400003/100024321-hombre-fuerte-atl%C3%A9tico-muestra-cuerpo-y-m%C3%BAsculos-abdominales-sobre-fondo-gris.jpg" alt="Después" class="after-image" id="after">
+  <div class="slider" id="slider">
+    <div class="slider-icon">↔</div>
+  </div>
+</div>
+
+<script>
+  const container = document.getElementById('container');
+  const afterImage = document.getElementById('after');
+  const slider = document.getElementById('slider');
+
+  let isDragging = false;
+
+  slider.addEventListener('mousedown', () => {
+    isDragging = true;
+    slider.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    slider.style.cursor = 'grab';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+
+    const rect = container.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    x = Math.max(0, Math.min(x, rect.width));
+    afterImage.style.clipPath = `inset(0 ${rect.width - x}px 0 0)`;
+    slider.style.left = `${x}px`;
+  });
+</script>
+<!-- /wp:html -->
+
+    <!-- /wp:html -->
