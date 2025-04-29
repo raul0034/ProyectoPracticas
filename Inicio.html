@@ -1,8 +1,11 @@
 <!-- wp:html -->
 <style>
+  body {
+  background-color: #e0ffff;
+}
   :root {
   --color-primario: #2ebdc2;
-  --color-secundario: #ffffff;
+  --color-secundario: #f0f0f0;
   --color-terciario: #202020;
   --color-caracter: #00305e;
   --color-texto: #e0ffff;
@@ -351,197 +354,14 @@
       }
   
       window.addEventListener('scroll', checkScroll);
-      checkScroll();
+      checkScroll(); // para activarlo si ya está visible
     </script>
   </body>
   </html>
-  <!-- /wp:html -->
-<!-- wp:html -->
-  <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Comparación Antes y Después</title>
-  <style>
-    :root {
-      --color-primario: #2ebdc2;
-      --color-secundario: #f0f0f0;
-      --color-terciario: #202020;
-      --color-caracter: #00305e;
-      --color-suave: #e0ffff;
-      --color-texto-alt: #202020;
-    }
-
-    .titulo-antes-despues {
-      font-family: 'Roboto';
-      font-size: 3rem;
-      color: var(--color-caracter);
-      background-color: var(--color-suave);
-      text-align: center;
-      padding: 200px 0px 100px;
-      margin-top: -200px;
-      width: 100vw;
-      max-width: 100vw;
-
-    }
-
-    .contenedor-antes-despues {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 100px;
-      background-color: var(--color-suave);
-      padding: 200px 100px 100px;
-      margin: -7px;
-      margin-top: -200px;
-    }
-
-    .comparison-container {
-      position: relative;
-      width: 350px;
-      height: 600px;
-      overflow: hidden;
-      border-radius: 15px;
-    }
-
-    .comparison-container img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      user-select: none;
-      pointer-events: none;
-    }
-
-    .after-image {
-      clip-path: inset(0 50% 0 0);
-      z-index: 2;
-    }
-
-    .slider {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-1.5px);
-      width: 4px;
-      height: 100%;
-      background-color: var(--color-primario);
-      z-index: 3;
-      cursor: grab;
-    }
-
-    .slider-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 30px;
-      height: 30px;
-      color: var(--color-suave);
-      background-color: var(--color-caracter);
-      border: 2px solid var(--color-primario);
-      border-radius: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      user-select: none;
-      pointer-events: none;
-    }
-  </style>
-</head>
-<body>
-  <h2 class="titulo-antes-despues">CAMBIA TU VIDA PARA SIEMPRE</h2>
-  <div class="contenedor-antes-despues">
-
-    <div class="comparison-container">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Laura-despues.jpg" alt="Antes" class="before-image">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Laura-antes.jpg" alt="Después" class="after-image">
-      <div class="slider">
-        <div class="slider-icon">☰</div>
-      </div>
-    </div>
-
-    <div class="comparison-container">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Antonia-despues.jpg" alt="Antes" class="before-image">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Antonia-antes.jpg" alt="Después" class="after-image">
-      <div class="slider">
-        <div class="slider-icon">☰</div>
-      </div>
-    </div>
-
-    <div class="comparison-container">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/jesica-despues.jpg" alt="Antes" class="before-image">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/jesica-antes.jpg" alt="Después" class="after-image">
-      <div class="slider">
-        <div class="slider-icon">☰</div>
-      </div>
-    </div>
-
-    <div class="comparison-container">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Cristina-despues.jpg" alt="Antes" class="before-image">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Cristina-antes.jpg" alt="Después" class="after-image">
-      <div class="slider">
-        <div class="slider-icon">☰</div>
-      </div>
-    </div>
-
-    <div class="comparison-container">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Vale-despues.jpg" alt="Antes" class="before-image">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Vale-antes.jpg" alt="Después" class="after-image">
-      <div class="slider">
-        <div class="slider-icon">☰</div>
-      </div>
-    </div>
-
-    <div class="comparison-container">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Tina-despues.jpg" alt="Antes" class="before-image">
-      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Tina-antes.jpg" alt="Después" class="after-image">
-      <div class="slider">
-        <div class="slider-icon">☰</div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const containers = document.querySelectorAll('.comparison-container');
-
-    containers.forEach(container => {
-      const afterImage = container.querySelector('.after-image');
-      const slider = container.querySelector('.slider');
-
-      let isDragging = false;
-
-      slider.addEventListener('mousedown', () => {
-        isDragging = true;
-        slider.style.cursor = 'grabbing';
-      });
-
-      document.addEventListener('mouseup', () => {
-        isDragging = false;
-        slider.style.cursor = 'grab';
-      });
-
-      container.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-
-        const rect = container.getBoundingClientRect();
-        let x = e.clientX - rect.left;
-        x = Math.max(0, Math.min(x, rect.width));
-        afterImage.style.clipPath = `inset(0 ${rect.width - x}px 0 0)`;
-        slider.style.left = `${x}px`;
-      });
-    });
-  </script>
-</body>
-</html>
-<!-- /wp:html -->
+  <!-- /wp:html-->
+  
   <!-- wp:html -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <h2 class="titulo-planes-entrenamiento">PERSONALIZA TU PLAN</h2>  
   <div class="contenedor-tarjetas-3columnas">
       <div class="tarjeta-estilo">
         <div class="tarjeta-imagen">
@@ -569,30 +389,17 @@
       </div>
     </div>
     <style>
-    .titulo-planes-entrenamiento {
-      font-family: 'Roboto';
-      font-size: 3rem;
-      color: var(--color-caracter);
-      background-color: var(--color-suave);
-      text-align: center;
-      padding: 100px 0px 0px;
-      margin: 0px -10px;
-      width: 100vw;
-      max-width: 100vw;
-
-    }
-
     .contenedor-tarjetas-3columnas {
       display: flex;
-      background-color: var(--color-suave);
       font-family: 'Roboto';
       justify-content: center;
       flex-wrap: nowrap;
       gap: 80px;
-      margin: -50px -10px;
-      padding: 200px 0px 500px;
-      width: 100vw;
-      max-width: 100vw;
+      margin: 0 auto;
+      overflow-x: auto;
+      padding: 40px;
+      width: 80%;
+      max-width: 80%;
     }
     .tarjeta-estilo {
       background: #2ebdc2;
@@ -645,84 +452,115 @@
     }
     </style>
     <!-- /wp:html -->
-    <!-- wp:html --> 
- <style>    
-    .pie-de-pagina {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 0px;
-      margin-top: 0px;
-      margin-bottom: 0;
-      background-color: var(--color-primario);
-      height: 300px;
-      width: 100%;
-      max-width: 100vw;
-      border-radius:0px;
+<!-- wp:spacer {"height":"34px"} -->
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- wp:html -->
+<style>
+  .texto-despues {
+        font-family: 'Roboto';
+        font-size: 2.5rem;
+        text-align: center;
+        justify-content: center;
+        color: var(--color-primario);
+        margin-bottom: 100px;
+      }
+.comparison-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin: 40px auto;
   }
-  
-  .container-redes-sociales {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      width: 80%;
+.comparison-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
   }
-  
-  .redes-sociales {
-      padding: 12px 24px;
-      color: var(--color-suave);
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-      background: none;
-      cursor: pointer;
-      font-family: 'Roboto';
-      font-size: 1.2rem;
-      margin: 0;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+
+  .after-image {
+    clip-path: inset(0 50% 0 0);
+    z-index: 2;
   }
-  
-  .redes-sociales:hover {
-      background-color: var();
-      color: var(--color-caracter);
-      transform: translateY(-1px);
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-1.5px);
+    width: 8px;
+    height: 100%;
+    background-color: #2ebdc2;
+    z-index: 3;
+    cursor: grab;
   }
-  
-  .texto-pie {
-      padding-top: 200px;
-      font-family: 'Roboto';
-      font-size: 12px;
-      color: var(--color-texto-alt);
+
+  .slider-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #2ebdc2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    user-select: none;
+    pointer-events: none;
   }
-  
-  .negrita {
-      font-weight: bold;
-      color: var(--color-caracter);
-  }    
-</style>  
-<body>
-    <section class="pie-de-pagina">
-      <div class="container-redes-sociales">
-          <a href="#" class="redes-sociales">Instagram</a>
-          <a href="#" class="redes-sociales">Facebook</a>
-          <a href="#" class="redes-sociales">X</a>
-          <a href="#" class="redes-sociales">Tik Tok</a>
-          <a href="#" class="redes-sociales">YouTube</a>
-      </div>
-      <div class="texto-pie">
-      </div>
-  </section>
-</body>
+
+
+</style>
+<div class="texto-despues">
+<h2>NUESTROS CAMBIOS</h2>
+</div>
+<div class="comparison-container" id="container">
+  <img src="https://previews.123rf.com/images/pokanyaluck/pokanyaluck2301/pokanyaluck230100070/196904036-medidas-corporales-de-hombres-gordos-tipo-con-aumento-de-la-deposici%C3%B3n-de-grasa-y-plenitud-vistas.jpg" alt="Antes" class="before-image">
+  <img src="https://previews.123rf.com/images/pjphotography/pjphotography1804/pjphotography180400003/100024321-hombre-fuerte-atl%C3%A9tico-muestra-cuerpo-y-m%C3%BAsculos-abdominales-sobre-fondo-gris.jpg" alt="Después" class="after-image" id="after">
+  <div class="slider" id="slider">
+    <div class="slider-icon">↔</div>
+  </div>
+</div>
+
+<script>
+  const container = document.getElementById('container');
+  const afterImage = document.getElementById('after');
+  const slider = document.getElementById('slider');
+
+  let isDragging = false;
+
+  slider.addEventListener('mousedown', () => {
+    isDragging = true;
+    slider.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    slider.style.cursor = 'grab';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+
+    const rect = container.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    x = Math.max(0, Math.min(x, rect.width));
+    afterImage.style.clipPath = `inset(0 ${rect.width - x}px 0 0)`;
+    slider.style.left = `${x}px`;
+  });
+</script>
 <!-- /wp:html -->
 
-  
-  
-  
-  
-  
-  
+    <!-- /wp:html -->
