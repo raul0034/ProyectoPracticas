@@ -1,5 +1,10 @@
 <!-- wp:html -->
 <style>
+<<<<<<< HEAD
+
+body {
+  background-color: #e0ffff;
+}
 :root {
 --color-primario: #2ebdc2;
 --color-secundario: #f0f0f0;
@@ -56,7 +61,7 @@ margin: 0;
     padding: 10px 15px;
     margin-left: 10px;
     margin-right: 10px;
-    color: var(--color-texto);
+    color: var(--color-secundario);
     text-decoration: none;
     font-weight: 600;
     border-radius: 30px;
@@ -128,6 +133,7 @@ margin: 0;
 
 <!-- wp:html -->
 <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <div class="bloque-servicios">
   <div class="contenedor-interno">
     <div class="contenido-imagen">
@@ -145,14 +151,18 @@ margin: 0;
 <style>
   .bloque-servicios {
     position: relative;
-    padding: 100px 30px;
-    color: #4b0082;
+    margin-top: -50px;
+    margin-bottom: 200px;
+    width: 100%;
+    margin-left: -45px;
+    max-width: 100vw;
+    padding: 100px 30px 0px;
     font-family: 'Roboto';
     background-repeat: no-repeat;
-    border-radius: 20px;
     overflow: hidden;
     background-color: #e0ffff;
     text-align: center;
+    justify-content: center;
   }
 
   .bloque-servicios::before {
@@ -184,143 +194,461 @@ margin: 0;
 
   .contenido-imagen {
     margin-right: 40px;
-    background-color: #e0ffff;
+=======
+  :root {
+  --color-primario: #2ebdc2;
+  --color-secundario: #f0f0f0;
+  --color-terciario: #202020;
+  --color-caracter: #00305e;
+  --color-texto: #e0ffff;
+  --color-texto-alt: #202020;
+>>>>>>> 9657dbcc1691bbc68ab7be170e34e20a5643c431
   }
   
-  .contenido-imagen img {
-    max-width: 370px;
-    width: 100%;
-    border-radius: 20px;
-    margin-rigt: 20px;
+  .barra-superior {
+  font-family: 'Roboto';
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  max-width: 100vw;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  justify-items: center;
+  z-index: 1000;
+  margin: 0;
+  margin-top: -10px;    
   }
-
-  .bloque-servicios h2 {
-    font-size: 48px;
-    margin-bottom: 8px;
-    color: black;
+  
+  .encabezado-superior {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0px;
+      width: 100vw;
+      margin-top: 0px;
+      padding: 5px;
+      background-color: var(--color-primario);
+      box-sizing: border-box;
+      position: relative;
   }
-
-  .bloque-servicios h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: #2ebdc2;
-    text-align: center;
+  
+  .botones-izquierda {
+      display: flex;
+      font-size: 25px;
+      gap: 10px;
+      flex: 1;
+      justify-content: right;
   }
-
-  .bloque-servicios p {
-    font-size: 20px;
-    margin: 0 auto;
-    color: black;
+  
+  .botones-derecha {
+      display: flex;
+      font-size: 25px;
+      gap: 10px;
+      flex: 1;
+      justify-content: left;
   }
-
-  .frase-fondo {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    font-size: 110px;
-    font-weight: bold;
-    font-family: 'Merienda', cursive;
-    color: rgba(100, 100, 100, 0.5);
-    white-space: nowrap;
-    z-index: 1;
-    pointer-events: none;
-    user-select: none;
+  
+  .boton-header {
+      padding: 10px 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: var(--color-secundario);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      display: inline-block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
   }
-</style>
-<!-- /wp:html -->
-
-<!-- wp:html -->
-<div class="contenedor-tarjetas-3columnas">
-    <div class="tarjeta-estilo">
-      <div class="tarjeta-imagen">
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/04/mujer-haciendo-deporte-gimnasio-1.jpg"/>
+  
+  .boton-header:hover {
+      color: var(--color-caracter);
+      transform: translateY(-1px);
+  
+  }
+  
+  .icono-boton img {
+      padding: 10px;
+      height: 100px;
+      width: auto;
+      transition: transform 0.3s ease;
+  }
+  
+  .icono-boton:hover img {
+      transform: scale(1.0);
+  }
+  </style>
+  
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Trainer</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <section class="barra-superior">
+          <div class="encabezado-superior">
+              <div class="botones-izquierda">
+                  <div class="menu-desplegable">
+                      <button class="boton-header">INICIO</button>
+                  </div>
+                  <div class="menu-desplegable">
+                      <button class="boton-header">NUESTROS PLANES</button>
+                  </div>
+              </div>        
+              <div class="logo-centro">
+                  <a href="#" class="icono-boton">
+                      <img src="http://localhost/wordpress/wp-content/uploads/2025/04/logo-2.png" alt="logo F1">
+                  </a>
+              </div>
+              <div class="botones-derecha">
+                  <div class="menu-desplegable">
+                      <button class="boton-header">QUIENES SOMOS</button>
+                  </div>
+                  <div class="menu-desplegable">    
+                      <button class="boton-header">CONTACTO</button>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </body>
+  </html>
+  <!-- /wp:html -->
+  
+  <!-- wp:html -->
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <div class="bloque-servicios">
+    <div class="contenedor-interno">
+      <div class="contenido-imagen">
+        <img src="http://localhost/wordpress/wp-content/uploads/2025/04/Entrenador-personal-online-768x945.sin_.fondo-removebg-preview.png" alt="Nuestros servicios" />
       </div>
-      <div class="tarjeta-contenido">
-        <h3>Edad: De 18 a 30 años</h3>
-       </div>
-    </div>
-    <div class="tarjeta-estilo">
-      <div class="tarjeta-imagen">
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/04/pexels-photo-2247179-1.jpeg" alt="Tarjeta 2" class="spectra-image"/>
-      </div>
-      <div class="tarjeta-contenido">
-        <h3>Edad: De 30 a 45 años</h3>
-     </div>
-    </div>
-    <div class="tarjeta-estilo">
-      <div class="tarjeta-imagen">
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/04/bf551e07-8232-4cc2-a0ce-9a1c35c27358_woman-libre-1200_default_0-1.jpg" alt="Tarjeta 3" class="spectra-image"/>
-      </div>
-      <div class="tarjeta-contenido">
-        <h3>Edad: + de 45 años</h3>
+      <div class="contenido-texto">
+        <div class="frase-fondo">ponte en forma</div>
+        <h3>Te ayudamos a cuidarte</h3>
+        <h2><b>Nuestros servicios</b></h2>
+        <p>Ayudamos a todas las mujeres de cualquier edad a mejorar su salud y sus hábitos mediante planes 100% personalizados de dietas y entrenos.</p>
       </div>
     </div>
   </div>
+  
   <style>
-  .contenedor-tarjetas-3columnas {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 80px;
-    margin: 0 auto;
-    overflow-x: auto;
-    padding: 40px;
-    width: 80%;
-    max-width: 80%;
-  }
-  .tarjeta-estilo {
-    background: #2ebdc2;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    width: calc(25% - 20px);
-    max-width: calc(25% - 20px);
-    min-width: 250px;
-  }
+    .bloque-servicios {
+      position: relative;
+      margin-top: -50px;
+      margin-bottom: 200px;
+      width: 100%;
+      margin-left: -45px;
+      max-width: 100vw;
+      padding: 100px 30px 0px;
+      font-family: 'Roboto';
+      background-repeat: no-repeat;
+      overflow: hidden;
+      background-color: #e0ffff;
+      text-align: center;
+      justify-content: center;
+    }
   
-  .tarjeta-imagen {
-    height: 200px;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .tarjeta-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    .bloque-servicios::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #e0ffff;
+      z-index: 1;
+    }
   
-  }
-  .tarjeta-estilo:hover .tarjeta-contenido {
-    transform: scale(1.05);
-    background-color: #00305e;
-    border-radius: 10px;
-  }
-  .tarjeta-contenido {
-    padding: 15px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.5s ease;
-  }
-  .tarjeta-contenido h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-    color: white;
-  }
+    .contenedor-interno {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+      flex-wrap: wrap; 
+    }
+  
+    .contenido-texto {
+      max-width: 600px;
+      text-align: left;
+      padding-right: 40px;
+    }
+  
+    .contenido-imagen {
+      margin-right: 40px;
+    }
+    
+    .contenido-imagen img {
+      max-width: 370px;
+      width: 100%;
+      border-radius: 20px;
+      margin-right: 20px;
+    }
+  
+    .bloque-servicios h2 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: black;
+      text-align: center;
+    }
+  
+    .bloque-servicios h3 {
+      font-size: 3.3rem;
+      margin-bottom: 10px;
+      color: #2ebdc2;
+      text-align: center;
+    }
+  
+    .bloque-servicios p {
+      font-size: 20px;
+      margin: 0 auto;
+      color: black;
+      text-align: center;
+    }
+  
+    .frase-fondo {
+      position: absolute;
+      top: 50%;
+      left: 64%;
+      transform: translate(-50%, -50%);
+      font-size: 8rem;
+      font-weight: bold;
+      font-family: 'Merienda', cursive;
+      color: rgba(150, 207, 203, 0.336);
+      white-space: nowrap;
+      z-index: -1;
+      pointer-events: none;
+      user-select: none;
+    }
   </style>
   <!-- /wp:html -->
   
-  <!-- wp:spacer {"height":"78px"} -->
-  <div style="height:78px" aria-hidden="true" class="wp-block-spacer"></div>
-  <!-- /wp:spacer -->
+  <!-- wp:html -->
+    <style>
+  
+      .fondo-portatil {
+        background-color: var(--color-primario);
+        padding: 200px 10px 0px;
+        margin-top: -15%;
+        margin-bottom: 200px;
+        margin-left: -10px;
+        max-width: 100vw;
+        width: 100%;
+      }
+  
+      .texto-portatil {
+        font-family: 'Roboto';
+        font-size: 2.5rem;
+        text-align: center;
+        justify-content: center;
+        color: var(--color-texto);
+        margin-bottom: -20px;
+      }
+  
+      .portatil-container {
+        position: relative;
+        width: 600px;
+        margin: 200px auto;
+        perspective: 1200px;
+      }
+  
+      .portatil {
+        width: 100%;
+        transform-style: preserve-3d;
+      }
+  
+      .pantalla {
+        width: 100%;
+        height: 340px;
+        background-color: #000000;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        transform-origin: bottom center;
+        transition: transform 1s ease;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-delay: 0.1s;
+      }
+  
+      .pantalla video, .pantalla iframe {
+        width: 95%;
+        height: 92%;
+        object-fit: cover;
+        border: none;
+      }
+  
+      .base {
+        width: 110%;
+        height: 25px;
+        background-color: #2c2c2c;
+        border-radius: 20px;
+        position: relative;
+        left: -30px;
+      }
+  
+      .base img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 0 20px 20px;
+      }
+  
+      /* Animación al hacer scroll */
+      .visible .pantalla {
+        transform: rotateX(0deg);
+      }
+  
+      .pantalla {
+        transform: rotateX(-90deg);
+      }
+    </style>
+  <body>
+    <section class="fondo-portatil">
+      <div class="texto-portatil">
+        <h2>NUESTRAS CLASES</h2>
+      </div>
+      <div class="portatil-container" id="portatil">
+        <div class="portatil">
+          <div class="pantalla">
+          <!-- Puedes poner un iframe de YouTube o un video tag -->
+           <video src="https://cdn.discordapp.com/attachments/758086626680242377/1365261032917958687/yt1z.net_-_penguin_very_emotional_360p.mp4?ex=680ca9eb&is=680b586b&hm=2187e6d919d1cb08810d57e1018b9d8f3961ae8a58b984794fe8d95027eaa849&" controls loop playsinline></video>
+          <!-- O un video local
+          <video src="tuvideo.mp4" autoplay muted loop></video>
+          -->
+        </div>
+        <div class="base"></div>
+      </div>
+    </section>
+  
+    <script>
+      const portatil = document.getElementById('portatil');
+  
+      function checkScroll() {
+        const rect = portatil.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top < windowHeight - 100) {
+          portatil.classList.add('visible');
+        } else {
+          portatil.classList.remove('visible');
+        }
+      }
+  
+      window.addEventListener('scroll', checkScroll);
+      checkScroll(); // para activarlo si ya está visible
+    </script>
+  </body>
+  </html>
+  <!-- /wp:html-->
   
   <!-- wp:html -->
-
-
-
-
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <div class="contenedor-tarjetas-3columnas">
+      <div class="tarjeta-estilo">
+        <div class="tarjeta-imagen">
+          <img src="http://localhost/wordpress/wp-content/uploads/2025/04/mujer-haciendo-deporte-gimnasio-1.jpg"/>
+        </div>
+        <div class="tarjeta-contenido">
+          <h3>Edad: De 18 a 30 años</h3>
+         </div>
+      </div>
+      <div class="tarjeta-estilo">
+        <div class="tarjeta-imagen">
+          <img src="http://localhost/wordpress/wp-content/uploads/2025/04/pexels-photo-2247179-1.jpeg" alt="Tarjeta 2" class="spectra-image"/>
+        </div>
+        <div class="tarjeta-contenido">
+          <h3>Edad: De 30 a 45 años</h3>
+       </div>
+      </div>
+      <div class="tarjeta-estilo">
+        <div class="tarjeta-imagen">
+          <img src="http://localhost/wordpress/wp-content/uploads/2025/04/bf551e07-8232-4cc2-a0ce-9a1c35c27358_woman-libre-1200_default_0-1.jpg" alt="Tarjeta 3" class="spectra-image"/>
+        </div>
+        <div class="tarjeta-contenido">
+          <h3>Edad: + de 45 años</h3>
+        </div>
+      </div>
+    </div>
+    <style>
+    .contenedor-tarjetas-3columnas {
+      display: flex;
+      font-family: 'Roboto';
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 80px;
+      margin: 0 auto;
+      overflow-x: auto;
+      padding: 40px;
+      width: 80%;
+      max-width: 80%;
+    }
+    .tarjeta-estilo {
+      background: #2ebdc2;
+      border-radius: 5px;
+      box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+      width: calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      min-width: 250px;
+    }
+    
+    .tarjeta-imagen {
+      height: 200px;
+      overflow: hidden;
+      border-radius: 5px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .tarjeta-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    
+    }
+    .tarjeta-estilo:hover .tarjeta-contenido {
+      transform: scale(1.05);
+      background-color: #00305e;
+      box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.35);
+      border-radius: 5px;
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    .tarjeta-contenido {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.5s ease;
+    }
+    .tarjeta-contenido h3 {
+      text-align: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-family: 'Roboto';
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      color: white;
+    }
+    </style>
+    <!-- /wp:html -->
+  
+  
+  
+  
+  
+  
+  <!-- /wp:html -->
