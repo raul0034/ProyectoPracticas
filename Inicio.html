@@ -237,6 +237,132 @@ margin: 0;
 <!-- /wp:html -->
 
 <!-- wp:html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portátil con vídeo animado</title>
+  <style>
+
+    .fondo-portatil {
+      background-color: var(--color-primario);
+      padding: 200px 10px 0px;
+      margin-top: -15%;
+      margin-bottom: 200px;
+      margin-left: -10px;
+      max-width: 100vw;
+      width: 100%;
+    }
+
+    .texto-portatil {
+      font-family: 'Roboto';
+      font-size: 2.5rem;
+      text-align: center;
+      justify-content: center;
+      color: var(--color-texto);
+      margin-bottom: -20px;
+    }
+
+    .portatil-container {
+      position: relative;
+      width: 600px;
+      margin: 200px auto;
+      perspective: 1200px;
+    }
+
+    .portatil {
+      width: 100%;
+      transform-style: preserve-3d;
+    }
+
+    .pantalla {
+      width: 100%;
+      height: 340px;
+      background-color: #000000;
+      border-radius: 20px 20px 0 0;
+      overflow: hidden;
+      transform-origin: bottom center;
+      transition: transform 1s ease;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+      position:relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-delay: 0.1s;
+    }
+
+    .pantalla video, .pantalla iframe {
+      width: 95%;
+      height: 92%;
+      object-fit: cover;
+      border: none;
+    }
+
+    .base {
+      width: 110%;
+      height: 25px;
+      background-color: #2c2c2c;
+      border-radius: 20px;
+      position: relative;
+      left: -30px;
+    }
+
+    .base img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 0 20px 20px;
+    }
+
+    /* Animación al hacer scroll */
+    .visible .pantalla {
+      transform: rotateX(0deg);
+    }
+
+    .pantalla {
+      transform: rotateX(-90deg);
+    }
+  </style>
+</head>
+<body>
+  <section class="fondo-portatil">
+    <div class="texto-portatil">
+      <h2>NUESTRAS CLASES</h2>
+    </div>
+    <div class="portatil-container" id="portatil">
+      <div class="portatil">
+        <div class="pantalla">
+        <!-- Puedes poner un iframe de YouTube o un video tag -->
+         <video src="https://cdn.discordapp.com/attachments/758086626680242377/1365261032917958687/yt1z.net_-_penguin_very_emotional_360p.mp4?ex=680ca9eb&is=680b586b&hm=2187e6d919d1cb08810d57e1018b9d8f3961ae8a58b984794fe8d95027eaa849&" controls loop playsinline></video>
+        <!-- O un video local
+        <video src="tuvideo.mp4" autoplay muted loop></video>
+        -->
+      </div>
+      <div class="base"></div>
+    </div>
+  </section>
+
+  <script>
+    const portatil = document.getElementById('portatil');
+
+    function checkScroll() {
+      const rect = portatil.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      if (rect.top < windowHeight - 100) {
+        portatil.classList.add('visible');
+      } else {
+        portatil.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // para activarlo si ya está visible
+  </script>
+</body>
+</html>
+<!-- /wp:html-->
+
+<!-- wp:html -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <div class="contenedor-tarjetas-3columnas">
     <div class="tarjeta-estilo">
