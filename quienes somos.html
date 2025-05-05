@@ -1,4 +1,53 @@
 <!-- wp:html -->
+<!-- gif de precarga de la página -->
+<div id="preloader">
+  <div class="arm-loader">
+    <img src="http://localhost/wordpress/wp-content/uploads/2025/05/weight-lifting-9170_256.gif" alt="Cargando..." />
+  </div>
+</div>
+
+<style>
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.arm-loader img {
+  width: 150px;
+  animation: lift 1.5s ease-in-out infinite;
+}
+
+@keyframes lift {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-10deg);
+  }
+}
+</style>
+
+<script>
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+    setTimeout(() => preloader.remove(), 500);
+  }
+});
+</script>
+<!-- /wp:html -->
+
+<!-- wp:html -->
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
 <style>
@@ -104,7 +153,7 @@
     <div class="encabezado-superior">
         <div class="botones-izquierda">
             <div class="menu-desplegable">
-                <a href="#" class="boton-header">INICIO</a>
+                <a href="http://localhost/wordpress/?page_id=73&preview=true" class="boton-header">INICIO</a>
             </div>
             <div class="menu-desplegable">
                 <a href="#" class="boton-header">NUESTROS PLANES</a>
@@ -444,61 +493,60 @@ Contamos con años de experiencia y resultados comprobados. Te acompañare en ca
 
 <!-- wp:html -->
 <style>    
-  .pie-de-pagina {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-    background-color: var(--color-primario);
-    width: 100%;
-    max-width: 100vw;
-    border-radius: 0px;
-    height: 100px;
-  }
+.pie-de-pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: var(--color-primario);
+  width: 100%;
+  max-width: 100vw;
+  border-radius: 0px;
+  height: 100px;
+}
 
-  .container-redes-sociales {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 10px 0;
-  }
+.container-redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 0;
+}
 
-  .redes-sociales {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    transition: transform 0.3s ease, color 0.3s ease;
-    font-family: 'Audiowide', sans-serif;
-  }
+.redes-sociales {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-family: 'Audiowide', sans-serif;
+}
 
-  .redes-sociales:hover {
-    color: var(--color-caracter);
-  }
+.redes-sociales:hover {
+  color: var(--color-caracter);
+}
 
-  .texto-pie {
-    margin-top: 10px;
-    font-family: 'Audiowide', sans-serif;
-    font-size: 12px;
-    color: var(--color-texto-alt);
-    text-align: center;
-  }
+.texto-pie {
+  margin-top: 10px;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 12px;
+  color: var(--color-texto-alt);
+  text-align: center;
+}
 
-  .negrita {
-    font-weight: bold;
-    color: var(--color-caracter);
-  }
+.negrita {
+  font-weight: bold;
+  color: var(--color-caracter);
+}
 </style>
 
 <section class="pie-de-pagina">
-        <div class="container-redes-sociales">
-            <a href="#" class="redes-sociales">Instagram</a>
-            <a href="#" class="redes-sociales">Facebook</a>
-            <a href="#" class="redes-sociales">X</a>
-            <a href="#" class="redes-sociales">Tik Tok</a>
-            <a href="#" class="redes-sociales">YouTube</a>
-        </div>
-
+  <div class="container-redes-sociales">
+    <a href="https://www.instagram.com/dasesportcenter_/?hl=es" class="redes-sociales" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.facebook.com/julianfitrainer" class="redes-sociales" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://x.com/RogueFitness" class="redes-sociales" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="https://www.tiktok.com/@eresfitness" class="redes-sociales" target="_blank" rel="noopener noreferrer">Tik Tok</a>
+    <a href="https://www.youtube.com/c/ATHLEANXEspa%C3%B1ol" class="redes-sociales" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
 </section>
 <!-- /wp:html -->
 
