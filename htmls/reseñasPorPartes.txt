@@ -1,0 +1,216 @@
+HTML---------------------------------------------------------------------------------------------------------------
+
+
+
+<div class="slider-wrapper">
+    <button class="arrow left desktop" onclick="moveSlide(-1)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <!-- Reemplaza esta parte con todas tus .review -->
+            <div class="review">
+                <strong>Laura Gómez</strong>
+                <div class="stars">
+                    <svg viewBox="0 0 24 24" fill="#FFD700" width="20" height="20"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="#FFD700" width="20" height="20"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="#FFD700" width="20" height="20"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="#FFD700" width="20" height="20"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                "Me sorprendió gratamente la rapidez con la que gestionaron todo."
+            </div>
+            <!-- Agrega las demás reseñas aquí -->
+        </div>
+    </div>
+
+    <button class="arrow right desktop" onclick="moveSlide(1)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </button>
+
+    <div class="arrow-group mobile">
+        <button class="arrow left" onclick="moveSlide(-1)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="arrow right" onclick="moveSlide(1)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS---------------------------------------------------------------------------------------------------------------
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: calc(2 * 360px + 40px);
+    margin: auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    overflow: hidden;
+    flex: 1;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.review {
+    font-family: 'Roboto', sans-serif;
+    width: 310px;
+    padding: 15px;
+    margin-right: 20px;
+    background: #e2e2e2;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.review:last-child {
+    margin-right: 0;
+}
+
+.arrow {
+    background: #00305e;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-group {
+    display: none;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.arrow.desktop {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .slider-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .review {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .arrow.desktop {
+        display: none;
+    }
+
+    .arrow-group.mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .arrow {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JavaScript-----------------------------------------------------------------------------------------------------
+
+
+
+
+<script>
+const slider = document.getElementById('slider');
+let index = 0;
+
+function moveSlide(direction) {
+    const review = document.querySelector('.review');
+    const reviewStyle = getComputedStyle(review);
+    const reviewWidth = review.offsetWidth + parseInt(reviewStyle.marginRight);
+    const visibleReviews = 2;
+    const total = slider.children.length;
+    const maxIndex = Math.ceil(total / visibleReviews) - 1;
+
+    index += direction;
+    if (index < 0) index = maxIndex;
+    if (index > maxIndex) index = 0;
+
+    slider.style.transform = `translateX(-${index * reviewWidth * visibleReviews}px)`;
+}
+
+window.addEventListener('resize', () => moveSlide(0));
+</script>
