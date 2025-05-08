@@ -1,0 +1,539 @@
+<!-- wp:html -->
+<!-- gif de precarga de la página -->
+<div id="preloader">
+    <div class="arm-loader">
+      <img src="http://localhost/wordpress/wp-content/uploads/2025/05/weight-lifting-9170_256.gif" alt="Cargando..." />
+    </div>
+  </div>
+  
+  <style>
+  #preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  
+  .arm-loader img {
+    width: 150px;
+    animation: lift 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes lift {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(-10deg);
+    }
+  }
+  </style>
+  
+  <script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+      preloader.style.opacity = '0';
+      preloader.style.pointerEvents = 'none';
+      setTimeout(() => preloader.remove(), 500);
+    }
+  });
+  </script>
+  <!-- /wp:html -->
+  
+  <!-- wp:html -->
+  <style>
+    :root {
+    --color-primario: #2ebdc2;
+    --color-secundario: #ffffff;
+    --color-terciario: #202020;
+    --color-caracter: #00305e;
+    --color-texto: #e0ffff;
+    --color-texto-alt: #202020;
+    }
+    
+    .barra-superior {
+    font-family: 'Audiowide', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    max-width: 100vw;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    justify-items: center;
+    z-index: 1000;
+    margin: 0;
+    margin-top: -10px;    
+    }
+    
+    .encabezado-superior {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0px;
+        width: 100vw;
+        margin-top: 0px;
+        padding: 5px;
+        background-color: var(--color-primario);
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .botones-izquierda {
+        display: flex;
+        font-size: 25px;
+        gap: 10px;
+        flex: 1;
+        justify-content: right;
+    }
+    
+    .botones-derecha {
+        display: flex;
+        font-size: 25px;
+        gap: 10px;
+        flex: 1;
+        justify-content: left;
+    }
+    
+    .boton-header {
+        padding: 10px 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: var(--color-secundario);
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        display: inline-block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+    }
+    
+    .boton-header:hover {
+        color: var(--color-caracter);
+        transform: translateY(-1px);
+    
+    }
+    
+    .icono-boton img {
+        padding: 10px;
+        height: 100px;
+        width: auto;
+        transition: transform 0.3s ease;
+    }
+    
+    .icono-boton:hover img {
+        transform: scale(1.0);
+    }
+    </style>
+    
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trainer</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+  <section class="barra-superior">
+    <div class="encabezado-superior">
+        <div class="botones-izquierda">
+            <div class="menu-desplegable">
+                <a href="http://localhost/wordpress/?page_id=73&preview=true" class="boton-header">INICIO</a>
+            </div>
+            <div class="menu-desplegable">
+                <a href="#" class="boton-header">NUESTROS PLANES</a>
+            </div>
+        </div>        
+        <div class="logo-centro">
+            <a href="#" class="icono-boton">
+                <img src="http://localhost/wordpress/wp-content/uploads/2025/04/logo-2.png" alt="logo F1">
+            </a>
+        </div>
+        <div class="botones-derecha">
+            <div class="menu-desplegable">
+                <a href="http://localhost/wordpress/quienes-somos/" class="boton-header">QUIENES SOMOS</a>
+            </div>
+            <div class="menu-desplegable">    
+                <a href="#" class="boton-header">CONTACTO</a>
+            </div>
+        </div>
+    </div>
+  </section>
+    </body>
+    </html>
+  <!-- /wp:html -->
+  
+  <!-- wp:spacer {"height":"23px"} -->
+  <div style="height:23px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+  
+  <!-- wp:html -->
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <div class="titulo-bloque">
+    <h2 class="linea linea-1">SI TIENES</h2>
+    <h2 class="linea linea-2">MAS DE 45 AÑOS</h2>
+    <h2 class="linea linea-3">TENEMOS TU RUTINA PERFECTA</h2>
+  </div>
+  
+  <style>
+  .titulo-bloque {
+    background-color: #00305e;
+    color: #e0ffff;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+  }
+  
+  .titulo-bloque h2 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 64px;
+    margin: 20px 0;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Animaciones */
+  .linea-1 {
+    animation: aparecerIzquierda 1s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+  .linea-2 {
+    animation: aparecerArriba 1s ease-out forwards;
+    animation-delay: 0.6s;
+  }
+  .linea-3 {
+    animation: aparecerDerecha 1s ease-out forwards;
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes aparecerIzquierda {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes aparecerArriba {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes aparecerDerecha {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .titulo-bloque h2 {
+      font-size: 40px;
+    }
+  }
+  </style>
+  <!-- /wp:html -->
+  
+  <!-- wp:spacer {"height":"42px"} -->
+  <div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+  
+  <!-- wp:html -->
+  <style>
+    .bloque-entrenamiento {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #e0ffff;
+  padding: 80px 40px;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planes-movil {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    .wp-ipad-case {
+  padding: 10px;
+  background: #222;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+
+.wp-ipad {
+  width: 600px;
+  height: 800px;
+  background: #000;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wp-screen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.wp-instagram-post iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.wp-home-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 6px;
+  background: #444;
+  border-radius: 3px;
+}
+
+  
+.contenido-central {
+  flex: 1;
+  max-width: 600px;
+  padding: 0 20px;
+  color: #00305e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+  
+    .contenido-central h3 {
+      font-size: 40px;
+      font-family: 'Audiowide', sans-serif;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    .contenido-central h4 {
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 25px;
+      text-align: center;
+  
+    }
+  
+    .contenido-central p {
+      font-size: 20px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+  
+    .contenido-central ul {
+      list-style: disc;
+      padding-left: 1.8rem;
+      font-size: 22px;
+      margin-bottom: 40px;
+      color: black;
+    }
+  
+    .contenido-central li {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+  .bloque-entrenamiento {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+   
+  
+      .contenido-central {
+        text-align: center;
+        padding: 0;
+      }
+  
+      .contenido-central h3,
+      .contenido-central h4,
+      .contenido-central p,
+      .contenido-central ul {
+        text-align: justify;
+      }
+       h3 {
+        text-align: justify;
+       }
+       p {
+        text-align: justify;
+       }
+    }
+   
+
+    .bloque-resumen {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #dff;
+}
+
+.bloque-resumen h5 {
+  font-size: 25px;
+  color: #00305e;
+  font-weight: normal;
+}
+  </style>
+  <div class="bloque-entrenamiento">
+    <!-- iPad -->
+    <div class="planes-movil">
+      <div class="wp-ipad-case">
+        <div class="wp-ipad">
+          <div class="wp-screen">
+            <div class="wp-instagram-post">
+              <iframe src="https://www.youtube.com/embed/IRD5pNkasKs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="wp-home-button"></div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Texto de rutina -->
+    <div class="contenido-central">
+      <h3>🏋️‍♀️ Redescubre tu mejor versión con nuestras rutinas 🏋️‍♀️</h3>
+      <p><b>Con el paso de los años, nuestro cuerpo cambia… pero eso no significa que tengamos que frenar. Al contrario: mantenerse activo después de los 45 es clave para una vida plena, con energía y bienestar.</b></p>
+  
+      <h4>Tipos de entrenamientos y rutinas que ofrecemos:</h4>
+      <ul>
+        <li>Fortalecimiento muscular.</li>
+        <li>Salud articular.</li>
+        <li>Movilidad y Equilibrio.</li>
+        <li>Prevención de lesiones.</li>
+        <li>Bienestar cardiovascular.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bloque-resumen">
+    <h5>🕓 30 a 45 minutos, 3–6 veces por semana, Alternar fuerza, cardio y movilidad.</h5>
+  </div>
+  
+  <!-- wp:spacer {"height":"68px"} -->
+    <div style="height:68px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:html /-->
+    
+    <!-- wp:html -->
+      <title>Fondo Celeste Claro</title>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #e0ffff;
+          font-family: sans-serif;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Puedes añadir aquí tu contenido -->
+    </body>
+    <!-- /wp:html -->
+    
+    <!-- wp:html -->
+    <style>    
+    .pie-de-pagina {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      background-color: var(--color-primario);
+      width: 100%;
+      max-width: 100vw;
+      border-radius: 0px;
+      height: 100px;
+    }
+    
+    .container-redes-sociales {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 10px 0;
+    }
+    
+    .redes-sociales {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      transition: transform 0.3s ease, color 0.3s ease;
+      font-family: 'Audiowide', sans-serif;
+    }
+    
+    .redes-sociales:hover {
+      color: var(--color-caracter);
+    }
+    
+    .texto-pie {
+      margin-top: 10px;
+      font-family: 'Audiowide', sans-serif;
+      font-size: 12px;
+      color: var(--color-texto-alt);
+      text-align: center;
+    }
+    
+    .negrita {
+      font-weight: bold;
+      color: var(--color-caracter);
+    }
+    </style>
+    
+    <section class="pie-de-pagina">
+      <div class="container-redes-sociales">
+        <a href="https://www.instagram.com/dasesportcenter_/?hl=es" class="redes-sociales" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/julianfitrainer" class="redes-sociales" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://x.com/RogueFitness" class="redes-sociales" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.tiktok.com/@eresfitness" class="redes-sociales" target="_blank" rel="noopener noreferrer">Tik Tok</a>
+        <a href="https://www.youtube.com/c/ATHLEANXEspa%C3%B1ol" class="redes-sociales" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+    </section>
+    <!-- /wp:html -->
