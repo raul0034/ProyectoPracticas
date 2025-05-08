@@ -1,0 +1,449 @@
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan 30-45</title>
+  <!-- Preloader GIF -->
+  <style>
+    #preloader {
+      position: fixed;
+      width: 100%; height: 100%;
+      background-color: #fff;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+      opacity: 1;
+    }
+    .arm-loader img {
+      width: 150px;
+      animation: lift 1.5s ease-in-out infinite;
+    }
+    @keyframes lift {
+      0%,100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-20px) rotate(-10deg); }
+    }
+  </style>
+  <script>
+    window.addEventListener("load", function() {
+      const pre = document.getElementById("preloader");
+      pre.style.opacity = '0';
+      pre.style.pointerEvents = 'none';
+      setTimeout(() => pre.remove(), 500);
+    });
+  </script>
+  <!-- Variables y estilos generales -->
+  <style>
+    :root {
+      --color-primario: #2ebdc2;
+      --color-secundario: #ffffff;
+      --color-terciario: #202020;
+      --color-caracter: #00305e;
+      --color-suave: #e0ffff;
+    }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: var(--color-terciario);
+    }
+    a { text-decoration: none; }
+    /* Barra superior */
+    .barra-superior {
+  font-family: 'Audiowide', sans-serif;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  max-width: 100vw;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  justify-items: center;
+  z-index: 1000;
+  margin: 0;
+  margin-top: -10px;    
+  }
+  
+  .encabezado-superior {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0px;
+      width: 100vw;
+      margin-top: 0px;
+      padding: 5px;
+      background-color: var(--color-primario);
+      box-sizing: border-box;
+      position: relative;
+  }
+  
+  .botones-izquierda {
+      display: flex;
+      font-size: 25px;
+      gap: 10px;
+      flex: 1;
+      justify-content: right;
+  }
+  
+  .botones-derecha {
+      display: flex;
+      font-size: 25px;
+      gap: 10px;
+      flex: 1;
+      justify-content: left;
+  }
+  
+  .boton-header {
+      padding: 10px 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: var(--color-secundario);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      display: inline-block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+  }
+  
+  .boton-header:hover {
+      color: var(--color-caracter);
+      transform: translateY(-1px);
+  
+  }
+  
+  .icono-boton img {
+      padding: 10px;
+      height: 100px;
+      width: auto;
+      transition: transform 0.3s ease;
+  }
+  
+  .icono-boton:hover img {
+      transform: scale(1.0);
+  }
+
+    /* Hero-section */
+.titulo-bloque {
+  background-color: var(--color-primario);
+  color: #e0ffff;
+  width: 100%;
+  text-align: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  margin-top: -5px;
+}
+
+.titulo-bloque h2 {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 64px;
+  margin: 20px 0;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.linea-1 {
+  animation: aparecerIzquierda 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+.linea-2 {
+  animation: aparecerArriba 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+.linea-3 {
+  animation: aparecerDerecha 1s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes aparecerIzquierda {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes aparecerArriba {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes aparecerDerecha {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titulo-bloque h2 {
+    font-size: 40px;
+  }
+}
+
+    /* Sección Plan 30-45 */
+    .bloque-entrenamiento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0ffff;
+    padding: 80px 40px;
+    gap: 100px; /* mayor separación entre video y texto */
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+  }
+
+  .planes-video {
+    flex: 0 1 400px;
+    max-width: 450px;
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .video-screen {
+    width: 100%;
+    height: 300px;
+    background: #000;
+    border-radius: 20px 20px 0 0;
+    border: 8px solid var(--color-terciario);
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  }
+
+  .video-base {
+    width: 110%;
+    height: 20px;
+    background: var(--color-terciario);
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: -8px;
+    left: -3.5%;
+  }
+
+  .contenido-central {
+    flex: 1 1 500px;
+    max-width: 600px;
+    color: #00305e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contenido-central h3 {
+    font-size: 45px;
+    font-family: 'Audiowide', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .contenido-central h4 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .contenido-central p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .contenido-central ul {
+    list-style: disc;
+    padding-left: 1.8rem;
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: black;
+    text-align: center;
+  }
+
+  .contenido-central li {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    color: var(--color-caracter);
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    .bloque-entrenamiento {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 60px;
+    }
+
+    .contenido-central {
+      text-align: center;
+    }
+
+    .contenido-central h3,
+    .contenido-central h4,
+    .contenido-central p,
+    .contenido-central ul {
+      text-align: center;
+    }
+  }
+    /* Pie de página */
+    .pie-de-pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: var(--color-primario);
+  width: 100%;
+  max-width: 100vw;
+  border-radius: 0px;
+  height: 100px;
+}
+
+.container-redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 0;
+}
+
+.redes-sociales {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-family: 'Audiowide', sans-serif;
+}
+
+.redes-sociales:hover {
+  color: var(--color-caracter);
+}
+
+.texto-pie {
+  margin-top: 10px;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 12px;
+  color: var(--color-texto-alt);
+  text-align: center;
+}
+
+.negrita {
+  font-weight: bold;
+  color: var(--color-caracter);
+}
+  </style>
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="arm-loader">
+      <img src="http://localhost/wordpress/wp-content/uploads/2025/05/weight-lifting-9170_256.gif" alt="Cargando...">
+    </div>
+  </div>
+
+  <!-- Barra superior -->
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Trainer</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<section class="barra-superior">
+  <div class="encabezado-superior">
+      <div class="botones-izquierda">
+          <div class="menu-desplegable">
+              <a href="http://localhost/wordpress/" class="boton-header">INICIO</a>
+          </div>
+          <div class="menu-desplegable">
+              <a href="http://localhost/wordpress/inicio/#planes" class="boton-header">NUESTROS PLANES</a>
+          </div>
+      </div>        
+      <div class="logo-centro">
+          <a href="#" class="icono-boton">
+              <img src="http://localhost/wordpress/wp-content/uploads/2025/04/logo-2.png" alt="logo F1">
+          </a>
+      </div>
+      <div class="botones-derecha">
+          <div class="menu-desplegable">
+              <a href="http://localhost/wordpress/quienes-somos/" class="boton-header">QUIENES SOMOS</a>
+          </div>
+          <div class="menu-desplegable">    
+              <a href="#" class="boton-header">CONTACTO</a>
+          </div>
+      </div>
+  </div>
+</section>
+  </body>
+  </html>
+
+  <!-- hero-section-->
+  <div class="titulo-bloque">
+    <h2 class="linea linea-1">SI TIENES</h2>
+    <h2 class="linea linea-2">ENTRE 30 Y 45 AÑOS</h2>
+    <h2 class="linea linea-3">ESTO ES PARA TI</h2>
+  </div>
+  
+
+  <!-- Sección Plan 30-45 -->
+  <div class="bloque-entrenamiento">
+    <div class="planes-video">
+      <div class="video-screen">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sfYKgxyBwcs" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-base"></div>
+    </div>
+  
+    <div class="contenido-central">
+      <h3>🏋️‍♀️ Entrenamiento Personalizado</h3>
+      <p><b> En esta etapa, tu cuerpo merece un entrenamiento que equilibre fuerza, resistencia y bienestar. Nuestro programa especializado combina ejercicios funcionales adaptados a tus necesidades, movilidad articular, trabajo de core y suelo pélvico, y sesiones de cardio moderado.</b></p>
+  
+      <h4>Tipos de entrenamientos que ofrecemos:</h4>
+      <ul class="lista">
+        <li>Entrenamientos funcionales: fuerza + cardio en circuitos dinámicos.</li>
+        <li>Peso corporal y pesas: define piernas, glúteos, abdomen y brazos.</li>
+        <li>HIIT: ideal para quemar grasa y mejorar resistencia.</li>
+        <li>Yoga y movilidad: flexibilidad, postura y antiestrés.</li>
+        <li>Rutinas adaptadas al ciclo menstrual.</li>
+      </ul>
+  
+      <h4>🕓 30 a 60 minutos, 3–4 veces por semana.</h4>
+    </div>
+  </div>
+  
+
+  <!-- Pie de página -->
+  <section class="pie-de-pagina">
+    <div class="container-redes-sociales">
+      <a href="https://www.instagram.com/dasesportcenter_/?hl=es" class="redes-sociales" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/julianfitrainer" class="redes-sociales" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://x.com/RogueFitness" class="redes-sociales" target="_blank" rel="noopener noreferrer">X</a>
+      <a href="https://www.tiktok.com/@eresfitness" class="redes-sociales" target="_blank" rel="noopener noreferrer">Tik Tok</a>
+      <a href="https://www.youtube.com/c/ATHLEANXEspa%C3%B1ol" class="redes-sociales" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </div>
+  </section>
+  <!-- /wp:html -->
