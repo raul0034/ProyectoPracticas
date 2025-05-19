@@ -180,191 +180,6 @@
 							"fontFamily": "\"Fira Code\""
 						}
 					]
-				},
-				{
-					"fontFamily": "Alegreya Sans SC",
-					"slug": "alegreya-sans-sc",
-					"fontFace": [
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic0.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic1.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic2.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic3.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic4.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic5.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic6.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic7.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic8.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic9.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic10.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic11.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic12.woff2"
-							]
-						},
-						{
-							"fontFamily": "Alegreya Sans SC",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/spectra/alegreya-sans-sc-100-italic13.woff2"
-							]
-						}
-					],
-					"isSpectra": true
-				},
-				{
-					"fontFamily": "Amaranth",
-					"slug": "amaranth",
-					"fontFace": [
-						{
-							"fontFamily": "Amaranth",
-							"fontStretch": "",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"http://localhost/wordpress/wp-content/bcf-fonts/Amaranth/amaranth-400-normal0.woff2"
-							]
-						}
-					],
-					"isBcf": true
-				},
-				{
-					"fontFamily": "Playfair Display",
-					"slug": "playfair-display",
-					"fontFace": [
-						{
-							"fontFamily": "Playfair Display",
-							"fontStretch": "",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": [
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-500-normal0.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-500-normal1.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-500-normal2.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-500-normal3.woff2"
-							]
-						},
-						{
-							"fontFamily": "Playfair Display",
-							"fontStretch": "",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-400-normal0.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-400-normal1.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-400-normal2.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Playfair Display/playfair-display-400-normal3.woff2"
-							]
-						}
-					],
-					"isSpectra": true
-				},
-				{
-					"fontFamily": "Alice",
-					"slug": "alice",
-					"fontFace": [
-						{
-							"fontFamily": "Alice",
-							"fontStretch": "",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"http://localhost/wordpress/wp-content/bcf-fonts/Alice/alice-400-normal0.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Alice/alice-400-normal1.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Alice/alice-400-normal2.woff2",
-								"http://localhost/wordpress/wp-content/bcf-fonts/Alice/alice-400-normal3.woff2"
-							]
-						}
-					],
-					"isBcf": true
 				}
 			]
 		},
@@ -561,12 +376,12 @@
 				}
 			},
 			"core/post-date": {
-				"color": {
+				"color":{
 					"text": "var:preset|color|accent-4"
 				},
 				"elements": {
 					"link": {
-						"color": {
+						"color" : {
 							"text": "var:preset|color|accent-4"
 						},
 						":hover": {
@@ -706,7 +521,7 @@
 								"left": "1.125rem"
 							}
 						},
-						":hover": {
+						":hover" : {
 							"border": {
 								"color": "transparent"
 							}
@@ -879,12 +694,13 @@
 		{
 			"area": "header",
 			"name": "vertical-header",
-			"title": "Vertical Header"
+			"title": "Vertical site header"
 		},
 		{
 			"area": "header",
 			"name": "header-large-title",
 			"title": "Header with large title"
+
 		},
 		{
 			"area": "footer",
@@ -910,9 +726,7 @@
 	"customTemplates": [
 		{
 			"name": "page-no-title",
-			"postTypes": [
-				"page"
-			],
+			"postTypes": ["page"],
 			"title": "Page No Title"
 		}
 	]

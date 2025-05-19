@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Spectra Gutenberg Blocks – Website Builder for the Block Editor - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-31 17:29:30+0000\n"
+"PO-Revision-Date: 2025-04-16 11:45:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,38 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - Spectra Gutenberg Blocks – Website Builder for the Block Editor - Stable (latest release)\n"
+
+#: lib/zip-ai/classes/sidebar-configurations.php:290
+msgid "Buy more credits"
+msgstr "Comprar más créditos"
+
+#: lib/zip-ai/classes/sidebar-configurations.php:288
+msgid "To continue using the assistant and access its full features, please purchase more credits."
+msgstr "Para seguir usando el asistente y acceder a sus características completas, compra más créditos."
+
+#: lib/zip-ai/classes/sidebar-configurations.php:286
+msgid "You’ve run out of credits."
+msgstr "Se te han acabado los créditos."
+
+#: lib/zip-ai/classes/sidebar-configurations.php:284
+msgid "Authentication failed. Invalid or missing bearer token."
+msgstr "Error de identificación. Token de portador inválido o faltante."
+
+#: lib/zip-ai/classes/helper.php:227
+msgid "Encountered an error while processing your request. Please try again."
+msgstr "Se ha producido un error al procesar tu solicitud. Inténtalo de nuevo."
+
+#: lib/zip-ai/classes/helper.php:216
+msgid "You do not have permission to perform this action."
+msgstr "No tienes permisos para realizar esta acción."
+
+#: lib/zip-ai/classes/helper.php:196
+msgid "empty_response"
+msgstr "empty_response"
+
+#: lib/zip-ai/classes/helper.php:195
+msgid "Empty response from API."
+msgstr "Respuesta vacía de la API."
 
 #: lib/bsf-analytics/modules/deactivation-survey/classes/class-deactivation-survey-feedback.php:308
 msgid "Other"
@@ -84,10 +116,6 @@ msgstr "Aprende más."
 #: lib/astra-notices/class-astra-notices.php:153
 msgid "Invalid notice ID."
 msgstr "ID de aviso no válido."
-
-#: classes/class-uagb-init-blocks.php:1200
-msgid "Upgrade to Spectra Pro to unlock amazing features!"
-msgstr "¡Actualiza a Spectra Pro para desbloquear características increíbles!"
 
 #: classes/class-uagb-init-blocks.php:821
 msgid "Extensions"
@@ -224,7 +252,6 @@ msgstr "normal"
 
 #: classes/class-uagb-admin.php:427 admin-core/assets/build/dashboard-app.js:3
 #: admin-core/assets/build/dashboard-app.js:10
-#: admin-core/assets/build/editor.js:1
 msgid "Upgrade Now"
 msgstr "Actualizar ahora"
 
@@ -273,31 +300,23 @@ msgctxt "block title"
 msgid "Spectra AI"
 msgstr "Spectra IA"
 
-#: lib/zip-ai/classes/sidebar-configurations.php:270
-msgid "You have no credits left."
-msgstr "No te quedan créditos."
-
-#: lib/zip-ai/classes/sidebar-configurations.php:269
-msgid "Invalid auth token."
-msgstr "Token de identificación no válido."
-
 #: lib/zip-ai/classes/sidebar-configurations.php:187
 msgid "The message array was not supplied"
 msgstr "No se ha proporcionado el array de mensajes"
 
-#: lib/zip-ai/classes/helper.php:269
+#: lib/zip-ai/classes/helper.php:295
 msgid "The ZipWP API server encountered an error."
 msgstr "El servidor API de ZipWP ha encontrado un error."
 
-#: lib/zip-ai/classes/helper.php:259
+#: lib/zip-ai/classes/helper.php:285
 msgid "The ZipWP API server is not responding."
 msgstr "El servidor API de ZipWP no responde."
 
-#: lib/zip-ai/classes/helper.php:235
+#: lib/zip-ai/classes/helper.php:261
 msgid "The ZipWP Token is not set."
 msgstr "El token de ZipWP no está configurado."
 
-#: lib/zip-ai/classes/helper.php:225
+#: lib/zip-ai/classes/helper.php:251
 msgid "The ZipWP Endpoint was not declared"
 msgstr "No se ha declarado la variable de ZipWP"
 
@@ -307,12 +326,10 @@ msgid "Thank you for using %1$sZip AI.%2$s"
 msgstr "Gracias por utilizar %1$sZip AI.%2$s"
 
 #: lib/gutenberg-templates/inc/traits/helper.php:267
-#: lib/zip-ai/classes/helper.php:206
 msgid "The Zip AI Middleware encountered an error."
 msgstr "Zip AI Middleware ha encontrado un error."
 
 #: lib/gutenberg-templates/inc/traits/helper.php:257
-#: lib/zip-ai/classes/helper.php:196
 msgid "The Zip AI Middleware is not responding."
 msgstr "Zip AI Middleware no responde."
 
@@ -342,7 +359,7 @@ msgstr "No tienes permisos para realizar esta acción."
 #: lib/gutenberg-templates/inc/importer/plugin.php:270
 #: lib/gutenberg-templates/inc/importer/plugin.php:274
 #: lib/gutenberg-templates/inc/importer/plugin.php:445
-#: lib/zip-ai/classes/sidebar-configurations.php:255
+#: lib/zip-ai/classes/sidebar-configurations.php:267
 msgid "Something went wrong"
 msgstr "Algo salió mal"
 
@@ -453,7 +470,6 @@ msgstr "Este bloque te permite generar un loop personalizado a partir de distint
 #: admin-core/assets/build/dashboard-app.js:4
 #: admin-core/assets/build/dashboard-app.js:17
 #: admin-core/assets/build/dashboard-app.js:18
-#: admin-core/assets/build/editor.js:1
 msgid "Loop Builder"
 msgstr "Maquetador del loop"
 
@@ -509,7 +525,7 @@ msgstr "Extension de animaciones"
 msgid "Heads up!"
 msgstr "¡Atención!"
 
-#: classes/class-uagb-init-blocks.php:1323
+#: classes/class-uagb-init-blocks.php:1284
 msgid "Invalid request"
 msgstr "Petición no válida"
 
@@ -7720,8 +7736,7 @@ msgstr "Activar/Desactivar"
 #: blocks-config/popup-builder/class-uagb-popup-builder.php:92
 #: includes/blocks/popup-builder/block.php:16
 #: admin-core/assets/build/dashboard-app.js:3
-#: admin-core/assets/build/dashboard-app.js:17
-#: admin-core/assets/build/editor.js:1 dist/blocks-placeholder.js:29
+#: admin-core/assets/build/dashboard-app.js:17 dist/blocks-placeholder.js:29
 msgid "Popup Builder"
 msgstr "Maquetador de ventanas emergentes"
 
@@ -8271,7 +8286,7 @@ msgid "Successfully saved data!"
 msgstr "¡Datos guardados correctamente!"
 
 #: admin-core/ajax/common-settings.php:181
-#: classes/class-uagb-init-blocks.php:1432
+#: classes/class-uagb-init-blocks.php:1393
 msgid "No post data found!"
 msgstr "¡No se han encontrado datos de la entrada!"
 
@@ -8775,7 +8790,7 @@ msgstr "Imagen"
 msgid "Default"
 msgstr "Por defecto"
 
-#: classes/class-uagb-init-blocks.php:1231 classes/class-uagb-rest-api.php:318
+#: classes/class-uagb-init-blocks.php:1192 classes/class-uagb-rest-api.php:318
 #: classes/class-uagb-rest-api.php:333
 msgid "None"
 msgstr "Ninguno"
@@ -8806,7 +8821,7 @@ msgstr "Nonce de WordPress no validado."
 msgid "Table of Contents"
 msgstr "Tabla de contenidos"
 
-#: classes/class-uagb-init-blocks.php:1307
+#: classes/class-uagb-init-blocks.php:1268
 msgid "You have not added any Gravity Forms yet."
 msgstr "Todavía no has añadido ningún formulario de Gravity Forms."
 
@@ -8822,12 +8837,12 @@ msgstr "Botón de marketing"
 msgid "Please select a valid Contact Form 7."
 msgstr "Por favor, selecciona un formulario válido de Contact Form 7."
 
-#: classes/class-uagb-init-blocks.php:1274
+#: classes/class-uagb-init-blocks.php:1235
 msgid "You have not added any Contact Form 7 yet."
 msgstr "Todavía no has añadido ningún formulario de Contact Form 7."
 
-#: classes/class-uagb-init-blocks.php:1260
-#: classes/class-uagb-init-blocks.php:1293
+#: classes/class-uagb-init-blocks.php:1221
+#: classes/class-uagb-init-blocks.php:1254
 msgid "Select Form"
 msgstr "Selecciona un formulario"
 
